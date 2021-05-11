@@ -1096,10 +1096,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/Resource": [
+        "/LegacyInfraStackSmsSender/LegacySmsSenderHandler/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "SmsSenderHandlerServiceRoleB6E45F0D",
+            "data": "LegacySmsSenderHandlerServiceRole2E581A64",
             "trace": [
               "new Role (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:563:31)",
@@ -1123,10 +1123,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/DefaultPolicy/Resource": [
+        "/LegacyInfraStackSmsSender/LegacySmsSenderHandler/ServiceRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "SmsSenderHandlerServiceRoleDefaultPolicy8D03C8EE",
+            "data": "LegacySmsSenderHandlerServiceRoleDefaultPolicyAC21B766",
             "trace": [
               "new Policy (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
               "Role.addToPrincipalPolicy (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
@@ -1151,10 +1151,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/SmsSenderHandler/Resource": [
+        "/LegacyInfraStackSmsSender/LegacySmsSenderHandler/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "SmsSenderHandlerB9A5685B",
+            "data": "LegacySmsSenderHandler4FC00A2A",
             "trace": [
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:625:35)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
@@ -1276,10 +1276,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Resource": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapi29078F5F",
+            "data": "legacysmsapi6B2DC6F8",
             "trace": [
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:711:22)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
@@ -1302,10 +1302,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/CloudWatchRole/Resource": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/CloudWatchRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiCloudWatchRole4E28C4F7",
+            "data": "legacysmsapiCloudWatchRoleAFFC48C9",
             "trace": [
               "new Role (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
               "RestApi._configureCloudWatchRole (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:496:18)",
@@ -1330,10 +1330,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Account": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Account": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiAccount8F282026",
+            "data": "legacysmsapiAccount339C04C5",
             "trace": [
               "RestApi._configureCloudWatchRole (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:501:22)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:728:12)",
@@ -1357,10 +1357,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Deployment/Resource": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Deployment/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiDeployment61890AF9a3c8308808dd8b886ca71f546ffe27ce",
+            "data": "legacysmsapiDeploymentCAC5ED13774378a4fbb5f10520cd6f01a7d14896",
             "trace": [
               "new Deployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:75:21)",
               "RestApi._configureDeployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:529:32)",
@@ -1385,10 +1385,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/DeploymentStage.prod/Resource": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/DeploymentStage.prod/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiDeploymentStageprod6DEE5299",
+            "data": "legacysmsapiDeploymentStageprod77D733D3",
             "trace": [
               "new Stage (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:240:22)",
               "RestApi._configureDeployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:539:30)",
@@ -1413,10 +1413,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Endpoint": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Endpoint": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiEndpointED469B97",
+            "data": "legacysmsapiEndpoint8CB70ED4",
             "trace": [
               "RestApi._configureDeployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:544:7)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:731:10)",
@@ -1440,10 +1440,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Default/POST/ApiPermission.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiPOSTApiPermissionLegacyInfraStackSmsSendersmsapi764BA5E6POSTD8DFA514",
+            "data": "legacysmsapiPOSTApiPermissionLegacyInfraStackSmsSenderlegacysmsapi06B3FF4FPOST13E15F87",
             "trace": [
               "Function.addPermission (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
               "LambdaIntegration.bind (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
@@ -1469,10 +1469,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Default/POST/ApiPermission.Test.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiPOSTApiPermissionTestLegacyInfraStackSmsSendersmsapi764BA5E6POST9D757502",
+            "data": "legacysmsapiPOSTApiPermissionTestLegacyInfraStackSmsSenderlegacysmsapi06B3FF4FPOST29F47DD2",
             "trace": [
               "Function.addPermission (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
               "LambdaIntegration.bind (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
@@ -1498,10 +1498,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackSmsSender/sms-api/Default/POST/Resource": [
+        "/LegacyInfraStackSmsSender/legacy-sms-api/Default/POST/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "smsapiPOSTB2A6A52E",
+            "data": "legacysmsapiPOSTE70B15EE",
             "trace": [
               "new Method (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
               "RootResource.addMethod (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",

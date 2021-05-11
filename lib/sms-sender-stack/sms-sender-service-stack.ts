@@ -13,7 +13,7 @@ export class SmsSenderServiceStack extends cdk.Stack {
       actions: ['sns:SetSMSAttributes', 'sns:Publish'],
     })
 
-    const lambdaFn = new lambda.Function(this, "SmsSenderHandler", {
+    const lambdaFn = new lambda.Function(this, "LegacySmsSenderHandler", {
       runtime: lambda.Runtime.NODEJS_10_X, // So we can use async in widget.js
       code: lambda.Code.fromAsset("resources/sms-handler"),
       handler: "handler.main"
@@ -21,9 +21,9 @@ export class SmsSenderServiceStack extends cdk.Stack {
 
     lambdaFn.addToRolePolicy(snsPolicy)
 
-    const api = new apigateway.RestApi(this, "sms-api", {
-      restApiName: "Sms Service",
-      description: "This service for sms action."
+    const api = new apigateway.RestApi(this, "legacy-sms-api", {
+      restApiName: "Lagacy Sms Service",
+      description: "This service for lrgacy sms action."
     });
 
     const sendSMS = new apigateway.LambdaIntegration(lambdaFn, {

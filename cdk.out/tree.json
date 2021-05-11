@@ -1180,17 +1180,17 @@
         "id": "LegacyInfraStackSmsSender",
         "path": "LegacyInfraStackSmsSender",
         "children": {
-          "SmsSenderHandler": {
-            "id": "SmsSenderHandler",
-            "path": "LegacyInfraStackSmsSender/SmsSenderHandler",
+          "LegacySmsSenderHandler": {
+            "id": "LegacySmsSenderHandler",
+            "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole",
+                "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/ServiceRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/Resource",
+                    "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -1229,11 +1229,11 @@
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/DefaultPolicy",
+                    "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/ServiceRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/DefaultPolicy/Resource",
+                        "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/ServiceRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
@@ -1250,10 +1250,10 @@
                               ],
                               "Version": "2012-10-17"
                             },
-                            "policyName": "SmsSenderHandlerServiceRoleDefaultPolicy8D03C8EE",
+                            "policyName": "LegacySmsSenderHandlerServiceRoleDefaultPolicyAC21B766",
                             "roles": [
                               {
-                                "Ref": "SmsSenderHandlerServiceRoleB6E45F0D"
+                                "Ref": "LegacySmsSenderHandlerServiceRole2E581A64"
                               }
                             ]
                           }
@@ -1277,11 +1277,11 @@
               },
               "Code": {
                 "id": "Code",
-                "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Code",
+                "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Code/Stage",
+                    "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
                       "version": "1.103.0"
@@ -1289,7 +1289,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Code/AssetBucket",
+                    "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
                       "version": "1.103.0"
@@ -1303,7 +1303,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Resource",
+                "path": "LegacyInfraStackSmsSender/LegacySmsSenderHandler/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -1347,7 +1347,7 @@
                     },
                     "role": {
                       "Fn::GetAtt": [
-                        "SmsSenderHandlerServiceRoleB6E45F0D",
+                        "LegacySmsSenderHandlerServiceRole2E581A64",
                         "Arn"
                       ]
                     },
@@ -1410,18 +1410,18 @@
               "version": "1.103.0"
             }
           },
-          "sms-api": {
-            "id": "sms-api",
-            "path": "LegacyInfraStackSmsSender/sms-api",
+          "legacy-sms-api": {
+            "id": "legacy-sms-api",
+            "path": "LegacyInfraStackSmsSender/legacy-sms-api",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "LegacyInfraStackSmsSender/sms-api/Resource",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::ApiGateway::RestApi",
                   "aws:cdk:cloudformation:props": {
-                    "description": "This service for sms action.",
-                    "name": "Sms Service"
+                    "description": "This service for lrgacy sms action.",
+                    "name": "Lagacy Sms Service"
                   }
                 },
                 "constructInfo": {
@@ -1431,11 +1431,11 @@
               },
               "CloudWatchRole": {
                 "id": "CloudWatchRole",
-                "path": "LegacyInfraStackSmsSender/sms-api/CloudWatchRole",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/CloudWatchRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "LegacyInfraStackSmsSender/sms-api/CloudWatchRole/Resource",
+                    "path": "LegacyInfraStackSmsSender/legacy-sms-api/CloudWatchRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -1480,13 +1480,13 @@
               },
               "Account": {
                 "id": "Account",
-                "path": "LegacyInfraStackSmsSender/sms-api/Account",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/Account",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::ApiGateway::Account",
                   "aws:cdk:cloudformation:props": {
                     "cloudWatchRoleArn": {
                       "Fn::GetAtt": [
-                        "smsapiCloudWatchRole4E28C4F7",
+                        "legacysmsapiCloudWatchRoleAFFC48C9",
                         "Arn"
                       ]
                     }
@@ -1499,16 +1499,16 @@
               },
               "Deployment": {
                 "id": "Deployment",
-                "path": "LegacyInfraStackSmsSender/sms-api/Deployment",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/Deployment",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "LegacyInfraStackSmsSender/sms-api/Deployment/Resource",
+                    "path": "LegacyInfraStackSmsSender/legacy-sms-api/Deployment/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::ApiGateway::Deployment",
                       "aws:cdk:cloudformation:props": {
                         "restApiId": {
-                          "Ref": "smsapi29078F5F"
+                          "Ref": "legacysmsapi6B2DC6F8"
                         },
                         "description": "Automatically created by the RestApi construct"
                       }
@@ -1526,19 +1526,19 @@
               },
               "DeploymentStage.prod": {
                 "id": "DeploymentStage.prod",
-                "path": "LegacyInfraStackSmsSender/sms-api/DeploymentStage.prod",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/DeploymentStage.prod",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "LegacyInfraStackSmsSender/sms-api/DeploymentStage.prod/Resource",
+                    "path": "LegacyInfraStackSmsSender/legacy-sms-api/DeploymentStage.prod/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::ApiGateway::Stage",
                       "aws:cdk:cloudformation:props": {
                         "restApiId": {
-                          "Ref": "smsapi29078F5F"
+                          "Ref": "legacysmsapi6B2DC6F8"
                         },
                         "deploymentId": {
-                          "Ref": "smsapiDeployment61890AF9a3c8308808dd8b886ca71f546ffe27ce"
+                          "Ref": "legacysmsapiDeploymentCAC5ED13774378a4fbb5f10520cd6f01a7d14896"
                         },
                         "stageName": "prod"
                       }
@@ -1556,7 +1556,7 @@
               },
               "Endpoint": {
                 "id": "Endpoint",
-                "path": "LegacyInfraStackSmsSender/sms-api/Endpoint",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/Endpoint",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
                   "version": "1.103.0"
@@ -1564,22 +1564,22 @@
               },
               "Default": {
                 "id": "Default",
-                "path": "LegacyInfraStackSmsSender/sms-api/Default",
+                "path": "LegacyInfraStackSmsSender/legacy-sms-api/Default",
                 "children": {
                   "POST": {
                     "id": "POST",
-                    "path": "LegacyInfraStackSmsSender/sms-api/Default/POST",
+                    "path": "LegacyInfraStackSmsSender/legacy-sms-api/Default/POST",
                     "children": {
-                      "ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..": {
-                        "id": "ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
-                        "path": "LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
+                      "ApiPermission.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..": {
+                        "id": "ApiPermission.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..",
+                        "path": "LegacyInfraStackSmsSender/legacy-sms-api/Default/POST/ApiPermission.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
                           "aws:cdk:cloudformation:props": {
                             "action": "lambda:InvokeFunction",
                             "functionName": {
                               "Fn::GetAtt": [
-                                "SmsSenderHandlerB9A5685B",
+                                "LegacySmsSenderHandler4FC00A2A",
                                 "Arn"
                               ]
                             },
@@ -1598,11 +1598,11 @@
                                   },
                                   ":",
                                   {
-                                    "Ref": "smsapi29078F5F"
+                                    "Ref": "legacysmsapi6B2DC6F8"
                                   },
                                   "/",
                                   {
-                                    "Ref": "smsapiDeploymentStageprod6DEE5299"
+                                    "Ref": "legacysmsapiDeploymentStageprod77D733D3"
                                   },
                                   "/POST/"
                                 ]
@@ -1615,16 +1615,16 @@
                           "version": "1.103.0"
                         }
                       },
-                      "ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..": {
-                        "id": "ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
-                        "path": "LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
+                      "ApiPermission.Test.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..": {
+                        "id": "ApiPermission.Test.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..",
+                        "path": "LegacyInfraStackSmsSender/legacy-sms-api/Default/POST/ApiPermission.Test.LegacyInfraStackSmsSenderlegacysmsapi06B3FF4F.POST..",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
                           "aws:cdk:cloudformation:props": {
                             "action": "lambda:InvokeFunction",
                             "functionName": {
                               "Fn::GetAtt": [
-                                "SmsSenderHandlerB9A5685B",
+                                "LegacySmsSenderHandler4FC00A2A",
                                 "Arn"
                               ]
                             },
@@ -1643,7 +1643,7 @@
                                   },
                                   ":",
                                   {
-                                    "Ref": "smsapi29078F5F"
+                                    "Ref": "legacysmsapi6B2DC6F8"
                                   },
                                   "/test-invoke-stage/POST/"
                                 ]
@@ -1658,19 +1658,19 @@
                       },
                       "Resource": {
                         "id": "Resource",
-                        "path": "LegacyInfraStackSmsSender/sms-api/Default/POST/Resource",
+                        "path": "LegacyInfraStackSmsSender/legacy-sms-api/Default/POST/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::ApiGateway::Method",
                           "aws:cdk:cloudformation:props": {
                             "httpMethod": "POST",
                             "resourceId": {
                               "Fn::GetAtt": [
-                                "smsapi29078F5F",
+                                "legacysmsapi6B2DC6F8",
                                 "RootResourceId"
                               ]
                             },
                             "restApiId": {
-                              "Ref": "smsapi29078F5F"
+                              "Ref": "legacysmsapi6B2DC6F8"
                             },
                             "authorizationType": "NONE",
                             "integration": {
@@ -1686,7 +1686,7 @@
                                     ":apigateway:ap-southeast-1:lambda:path/2015-03-31/functions/",
                                     {
                                       "Fn::GetAtt": [
-                                        "SmsSenderHandlerB9A5685B",
+                                        "LegacySmsSenderHandler4FC00A2A",
                                         "Arn"
                                       ]
                                     },
