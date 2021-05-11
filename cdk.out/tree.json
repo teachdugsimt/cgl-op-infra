@@ -1175,6 +1175,578 @@
           "fqn": "@aws-cdk/core.Stack",
           "version": "1.103.0"
         }
+      },
+      "LegacyInfraStackSmsSender": {
+        "id": "LegacyInfraStackSmsSender",
+        "path": "LegacyInfraStackSmsSender",
+        "children": {
+          "SmsSenderHandler": {
+            "id": "SmsSenderHandler",
+            "path": "LegacyInfraStackSmsSender/SmsSenderHandler",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.103.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "sns:SetSMSAttributes",
+                                    "sns:Publish"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "SmsSenderHandlerServiceRoleDefaultPolicy8D03C8EE",
+                            "roles": [
+                              {
+                                "Ref": "SmsSenderHandlerServiceRoleB6E45F0D"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.103.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.103.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.103.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Code/AssetBucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.Resource",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.103.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "LegacyInfraStackSmsSender/SmsSenderHandler/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3Bucket48D60F6E"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3VersionKeyD012240C"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3VersionKeyD012240C"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "SmsSenderHandlerServiceRoleB6E45F0D",
+                        "Arn"
+                      ]
+                    },
+                    "handler": "handler.main",
+                    "runtime": "nodejs10.x"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.103.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.103.0"
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "LegacyInfraStackSmsSender/AssetParameters",
+            "children": {
+              "e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628": {
+                "id": "e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628",
+                "path": "LegacyInfraStackSmsSender/AssetParameters/e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "LegacyInfraStackSmsSender/AssetParameters/e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.103.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "LegacyInfraStackSmsSender/AssetParameters/e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.103.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "LegacyInfraStackSmsSender/AssetParameters/e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.103.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.103.0"
+            }
+          },
+          "sms-api": {
+            "id": "sms-api",
+            "path": "LegacyInfraStackSmsSender/sms-api",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "LegacyInfraStackSmsSender/sms-api/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::RestApi",
+                  "aws:cdk:cloudformation:props": {
+                    "description": "This service for sms action.",
+                    "name": "Sms Service"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.CfnRestApi",
+                  "version": "1.103.0"
+                }
+              },
+              "CloudWatchRole": {
+                "id": "CloudWatchRole",
+                "path": "LegacyInfraStackSmsSender/sms-api/CloudWatchRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "LegacyInfraStackSmsSender/sms-api/CloudWatchRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "apigateway.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.103.0"
+                }
+              },
+              "Account": {
+                "id": "Account",
+                "path": "LegacyInfraStackSmsSender/sms-api/Account",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::Account",
+                  "aws:cdk:cloudformation:props": {
+                    "cloudWatchRoleArn": {
+                      "Fn::GetAtt": [
+                        "smsapiCloudWatchRole4E28C4F7",
+                        "Arn"
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.CfnAccount",
+                  "version": "1.103.0"
+                }
+              },
+              "Deployment": {
+                "id": "Deployment",
+                "path": "LegacyInfraStackSmsSender/sms-api/Deployment",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "LegacyInfraStackSmsSender/sms-api/Deployment/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ApiGateway::Deployment",
+                      "aws:cdk:cloudformation:props": {
+                        "restApiId": {
+                          "Ref": "smsapi29078F5F"
+                        },
+                        "description": "Automatically created by the RestApi construct"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-apigateway.CfnDeployment",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.Deployment",
+                  "version": "1.103.0"
+                }
+              },
+              "DeploymentStage.prod": {
+                "id": "DeploymentStage.prod",
+                "path": "LegacyInfraStackSmsSender/sms-api/DeploymentStage.prod",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "LegacyInfraStackSmsSender/sms-api/DeploymentStage.prod/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ApiGateway::Stage",
+                      "aws:cdk:cloudformation:props": {
+                        "restApiId": {
+                          "Ref": "smsapi29078F5F"
+                        },
+                        "deploymentId": {
+                          "Ref": "smsapiDeployment61890AF9a3c8308808dd8b886ca71f546ffe27ce"
+                        },
+                        "stageName": "prod"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-apigateway.CfnStage",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.Stage",
+                  "version": "1.103.0"
+                }
+              },
+              "Endpoint": {
+                "id": "Endpoint",
+                "path": "LegacyInfraStackSmsSender/sms-api/Endpoint",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnOutput",
+                  "version": "1.103.0"
+                }
+              },
+              "Default": {
+                "id": "Default",
+                "path": "LegacyInfraStackSmsSender/sms-api/Default",
+                "children": {
+                  "POST": {
+                    "id": "POST",
+                    "path": "LegacyInfraStackSmsSender/sms-api/Default/POST",
+                    "children": {
+                      "ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..": {
+                        "id": "ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
+                        "path": "LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                          "aws:cdk:cloudformation:props": {
+                            "action": "lambda:InvokeFunction",
+                            "functionName": {
+                              "Fn::GetAtt": [
+                                "SmsSenderHandlerB9A5685B",
+                                "Arn"
+                              ]
+                            },
+                            "principal": "apigateway.amazonaws.com",
+                            "sourceArn": {
+                              "Fn::Join": [
+                                "",
+                                [
+                                  "arn:",
+                                  {
+                                    "Ref": "AWS::Partition"
+                                  },
+                                  ":execute-api:ap-southeast-1:",
+                                  {
+                                    "Ref": "AWS::AccountId"
+                                  },
+                                  ":",
+                                  {
+                                    "Ref": "smsapi29078F5F"
+                                  },
+                                  "/",
+                                  {
+                                    "Ref": "smsapiDeploymentStageprod6DEE5299"
+                                  },
+                                  "/POST/"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                          "version": "1.103.0"
+                        }
+                      },
+                      "ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..": {
+                        "id": "ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
+                        "path": "LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST..",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                          "aws:cdk:cloudformation:props": {
+                            "action": "lambda:InvokeFunction",
+                            "functionName": {
+                              "Fn::GetAtt": [
+                                "SmsSenderHandlerB9A5685B",
+                                "Arn"
+                              ]
+                            },
+                            "principal": "apigateway.amazonaws.com",
+                            "sourceArn": {
+                              "Fn::Join": [
+                                "",
+                                [
+                                  "arn:",
+                                  {
+                                    "Ref": "AWS::Partition"
+                                  },
+                                  ":execute-api:ap-southeast-1:",
+                                  {
+                                    "Ref": "AWS::AccountId"
+                                  },
+                                  ":",
+                                  {
+                                    "Ref": "smsapi29078F5F"
+                                  },
+                                  "/test-invoke-stage/POST/"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                          "version": "1.103.0"
+                        }
+                      },
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "LegacyInfraStackSmsSender/sms-api/Default/POST/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::ApiGateway::Method",
+                          "aws:cdk:cloudformation:props": {
+                            "httpMethod": "POST",
+                            "resourceId": {
+                              "Fn::GetAtt": [
+                                "smsapi29078F5F",
+                                "RootResourceId"
+                              ]
+                            },
+                            "restApiId": {
+                              "Ref": "smsapi29078F5F"
+                            },
+                            "authorizationType": "NONE",
+                            "integration": {
+                              "type": "AWS_PROXY",
+                              "uri": {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    "arn:",
+                                    {
+                                      "Ref": "AWS::Partition"
+                                    },
+                                    ":apigateway:ap-southeast-1:lambda:path/2015-03-31/functions/",
+                                    {
+                                      "Fn::GetAtt": [
+                                        "SmsSenderHandlerB9A5685B",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "/invocations"
+                                  ]
+                                ]
+                              },
+                              "integrationHttpMethod": "POST",
+                              "requestTemplates": {
+                                "application/json": "{ \"statusCode\": \"200\" }"
+                              }
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
+                          "version": "1.103.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-apigateway.Method",
+                      "version": "1.103.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.ResourceBase",
+                  "version": "1.103.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-apigateway.RestApi",
+              "version": "1.103.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "LegacyInfraStackSmsSender/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "LegacyInfraStackSmsSender/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.103.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.103.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.103.0"
+        }
       }
     },
     "constructInfo": {

@@ -1,0 +1,384 @@
+{
+  "Resources": {
+    "SmsSenderHandlerServiceRoleB6E45F0D": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/Resource"
+      }
+    },
+    "SmsSenderHandlerServiceRoleDefaultPolicy8D03C8EE": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "sns:SetSMSAttributes",
+                "sns:Publish"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "SmsSenderHandlerServiceRoleDefaultPolicy8D03C8EE",
+        "Roles": [
+          {
+            "Ref": "SmsSenderHandlerServiceRoleB6E45F0D"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/SmsSenderHandler/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "SmsSenderHandlerB9A5685B": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3Bucket48D60F6E"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3VersionKeyD012240C"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3VersionKeyD012240C"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "SmsSenderHandlerServiceRoleB6E45F0D",
+            "Arn"
+          ]
+        },
+        "Handler": "handler.main",
+        "Runtime": "nodejs10.x"
+      },
+      "DependsOn": [
+        "SmsSenderHandlerServiceRoleDefaultPolicy8D03C8EE",
+        "SmsSenderHandlerServiceRoleB6E45F0D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/SmsSenderHandler/Resource",
+        "aws:asset:path": "asset.e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628",
+        "aws:asset:property": "Code"
+      }
+    },
+    "smsapi29078F5F": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Description": "This service for sms action.",
+        "Name": "Sms Service"
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/Resource"
+      }
+    },
+    "smsapiCloudWatchRole4E28C4F7": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "apigateway.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/CloudWatchRole/Resource"
+      }
+    },
+    "smsapiAccount8F282026": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "smsapiCloudWatchRole4E28C4F7",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "smsapi29078F5F"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/Account"
+      }
+    },
+    "smsapiDeployment61890AF9a3c8308808dd8b886ca71f546ffe27ce": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "smsapi29078F5F"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "smsapiPOSTB2A6A52E"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/Deployment/Resource"
+      }
+    },
+    "smsapiDeploymentStageprod6DEE5299": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "smsapi29078F5F"
+        },
+        "DeploymentId": {
+          "Ref": "smsapiDeployment61890AF9a3c8308808dd8b886ca71f546ffe27ce"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/DeploymentStage.prod/Resource"
+      }
+    },
+    "smsapiPOSTApiPermissionLegacyInfraStackSmsSendersmsapi764BA5E6POSTD8DFA514": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "SmsSenderHandlerB9A5685B",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:ap-southeast-1:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "smsapi29078F5F"
+              },
+              "/",
+              {
+                "Ref": "smsapiDeploymentStageprod6DEE5299"
+              },
+              "/POST/"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.LegacyInfraStackSmsSendersmsapi764BA5E6.POST.."
+      }
+    },
+    "smsapiPOSTApiPermissionTestLegacyInfraStackSmsSendersmsapi764BA5E6POST9D757502": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "SmsSenderHandlerB9A5685B",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:ap-southeast-1:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "smsapi29078F5F"
+              },
+              "/test-invoke-stage/POST/"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/Default/POST/ApiPermission.Test.LegacyInfraStackSmsSendersmsapi764BA5E6.POST.."
+      }
+    },
+    "smsapiPOSTB2A6A52E": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "ResourceId": {
+          "Fn::GetAtt": [
+            "smsapi29078F5F",
+            "RootResourceId"
+          ]
+        },
+        "RestApiId": {
+          "Ref": "smsapi29078F5F"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "RequestTemplates": {
+            "application/json": "{ \"statusCode\": \"200\" }"
+          },
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:ap-southeast-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "SmsSenderHandlerB9A5685B",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/sms-api/Default/POST/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAE02QQW6EMAxFz9K9yQziAqVTdVcV0RO4waWZIQmKnY4Qyt1LQpFm5feTH/s7tarPjTo/PeOdKz3cTqv2gdT6Kahv0DKTbDgaN0JP7GPQBBfvWELUApdv12FAS0Ihi48ocyzHhzlBbrxOaL8GVOtbdFqMd9nyyB0Fa5g3lcCgVWvvJyp9cu38ZPRSfIUScFNhzsaqRASczYhCd1y2p8TSzuY/xYGt1j46gVeaJ79YciXmg8prlpE7HAu8IBO8k/z4IV/ulFIC5wdSVz791o2q6+0Lr2xMFbYZxpLq9/oHzPZhBF8BAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackSmsSender/CDKMetadata/Default"
+      }
+    }
+  },
+  "Parameters": {
+    "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3Bucket48D60F6E": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628\""
+    },
+    "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628S3VersionKeyD012240C": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628\""
+    },
+    "AssetParameterse8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628ArtifactHash5000C0F1": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"e8e82e94ce131196a8a3648180f94c17ce4adeffd0295def82c898dbc448d628\""
+    }
+  },
+  "Outputs": {
+    "smsapiEndpointED469B97": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "smsapi29078F5F"
+            },
+            ".execute-api.ap-southeast-1.",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "smsapiDeploymentStageprod6DEE5299"
+            },
+            "/"
+          ]
+        ]
+      }
+    }
+  }
+}
