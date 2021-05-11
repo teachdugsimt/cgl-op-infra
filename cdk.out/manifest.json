@@ -15,14 +15,79 @@
         "validateOnSynth": false
       },
       "metadata": {
-        "/LegacyInfraStackDB/CGLDevDbVPC/Resource": [
+        "/LegacyInfraStackDB": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "LegacyInfraStackDBlegacyvpcresources8B2FEE26.nested.template.json",
+              "id": "4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f",
+              "packaging": "file",
+              "sourceHash": "4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f",
+              "s3BucketParameter": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3Bucket60D42C6E",
+              "s3KeyParameter": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3VersionKeyB90C4F02",
+              "artifactHashParameter": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fArtifactHash8A09034A"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "VpcStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "LegacyInfraStackDBlegacyrdsresources2E440312.nested.template.json",
+              "id": "82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917",
+              "packaging": "file",
+              "sourceHash": "82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917",
+              "s3BucketParameter": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3BucketC87678FE",
+              "s3KeyParameter": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3VersionKeyB24971BE",
+              "artifactHashParameter": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917ArtifactHashF095CE64"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "RdsStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPC7E479944",
             "trace": [
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1215:21)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -41,7 +106,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/Subnet": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1Subnet36C085FB",
@@ -53,8 +118,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -73,7 +139,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/RouteTable": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1RouteTable6FCA2C93",
@@ -85,8 +151,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -105,7 +172,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1RouteTableAssociation915F8DAF",
@@ -117,8 +184,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -137,7 +205,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/DefaultRoute": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1DefaultRoute7F8646AD",
@@ -146,8 +214,9 @@
               "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
               "Array.forEach (<anonymous>)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -166,7 +235,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/EIP": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/EIP": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1EIP5F53B6B1",
@@ -175,8 +244,9 @@
               "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
               "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -195,7 +265,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/NATGateway": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1NATGatewayC530F2E4",
@@ -204,8 +274,9 @@
               "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
               "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -224,7 +295,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/Subnet": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2Subnet3F73FBE6",
@@ -236,8 +307,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -256,7 +328,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/RouteTable": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2RouteTable61DEF0AE",
@@ -268,8 +340,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -288,7 +361,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2RouteTableAssociation39EEB974",
@@ -300,8 +373,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -320,7 +394,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/DefaultRoute": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2DefaultRouteFD6E836B",
@@ -329,8 +403,9 @@
               "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
               "Array.forEach (<anonymous>)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -349,7 +424,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/Subnet": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1SubnetFECE3CD8",
@@ -361,8 +436,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -381,7 +457,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/RouteTable": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1RouteTable4BEF98D8",
@@ -393,8 +469,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -413,7 +490,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1RouteTableAssociationF9048BE1",
@@ -425,8 +502,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -445,7 +523,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/DefaultRoute": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1DefaultRoute5149F426",
@@ -455,8 +533,9 @@
               "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
               "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -475,7 +554,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/Subnet": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2SubnetE562F1AB",
@@ -487,8 +566,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -507,7 +587,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/RouteTable": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2RouteTable60CF480D",
@@ -519,8 +599,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -539,7 +620,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2RouteTableAssociation1B058536",
@@ -551,8 +632,9 @@
               "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
               "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -571,7 +653,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/DefaultRoute": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2DefaultRoute7503F0F4",
@@ -581,8 +663,9 @@
               "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
               "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -601,14 +684,15 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/IGW": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/IGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCIGW47416E1D",
             "trace": [
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1251:19)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -627,14 +711,15 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbVPC/VPCGW": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/VPCGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCVPCGWC49B2C49",
             "trace": [
               "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1257:19)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -653,7 +738,116 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbInstance/SubnetGroup/Default": [
+        "/LegacyInfraStackDB/legacy-vpc-resources/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-vpc-resources/LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref",
+            "trace": [
+              "createNestedStackOutput (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
+              "Object.resolveReferences (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-vpc-resources/LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef",
+            "trace": [
+              "createNestedStackOutput (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
+              "Object.resolveReferences (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-vpc-resources/LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref",
+            "trace": [
+              "createNestedStackOutput (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
+              "Object.resolveReferences (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-vpc-resources.NestedStack/legacy-vpc-resources.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "legacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResourceD890F6CC",
+            "trace": [
+              "new NestedStack (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:21)",
+              "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:9)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/SubnetGroup/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSubnetGroup6DFABB5C",
@@ -662,8 +856,9 @@
               "new DatabaseInstanceNew (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:657:46)",
               "new DatabaseInstanceSource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:840:5)",
               "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:983:5)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -682,7 +877,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbInstance/SecurityGroup/Resource": [
+        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/SecurityGroup/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSecurityGroupAF3DA919",
@@ -691,8 +886,9 @@
               "new DatabaseInstanceNew (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:664:53)",
               "new DatabaseInstanceSource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:840:5)",
               "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:983:5)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -711,17 +907,18 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbInstance/Secret/Resource": [
+        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/Secret/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyInfraStackDBCGLDevDbInstanceSecret5FFC2BFA3fdaad7efa858a3daf9490cf0a702aeb",
+            "data": "LegacyInfraStackDBlegacyrdsresourcesCGLDevDbInstanceSecret12A518E33fdaad7efa858a3daf9490cf0a702aeb",
             "trace": [
               "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
               "new DatabaseSecret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:67:5)",
               "Object.renderCredentials (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
               "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:985:25)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -740,7 +937,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbInstance/Secret/Attachment/Resource": [
+        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/Secret/Attachment/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSecretAttachmentA477E855",
@@ -748,8 +945,9 @@
               "new SecretTargetAttachment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:655:24)",
               "DatabaseSecret.attach (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:317:12)",
               "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:1008:28)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -768,14 +966,127 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CGLDevDbInstance/Resource": [
+        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstance075828F1",
             "trace": [
               "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:988:22)",
-              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-rds-resources/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-rds-resources/reference-to-LegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787.Outputs.LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoLegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787OutputsLegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref",
+            "trace": [
+              "createNestedStackParameter (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:87:12)",
+              "Object.resolveReferences (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-rds-resources/reference-to-LegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787.Outputs.LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoLegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787OutputsLegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef",
+            "trace": [
+              "createNestedStackParameter (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:87:12)",
+              "Object.resolveReferences (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-rds-resources/reference-to-LegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787.Outputs.LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoLegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787OutputsLegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref",
+            "trace": [
+              "createNestedStackParameter (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
+              "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:87:12)",
+              "Object.resolveReferences (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/legacy-rds-resources.NestedStack/legacy-rds-resources.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "legacyrdsresourcesNestedStacklegacyrdsresourcesNestedStackResource466996BC",
+            "trace": [
+              "new NestedStack (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:21)",
+              "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:12:5)",
+              "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -814,6 +1125,156 @@
               "process.topLevelDomainCallback (domain.js:137:15)"
             ]
           }
+        ],
+        "/LegacyInfraStackDB/AssetParameters/4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3Bucket60D42C6E",
+            "trace": [
+              "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "VpcStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/AssetParameters/4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3VersionKeyB90C4F02",
+            "trace": [
+              "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "VpcStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/AssetParameters/4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fArtifactHash8A09034A",
+            "trace": [
+              "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "VpcStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/AssetParameters/82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3BucketC87678FE",
+            "trace": [
+              "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "RdsStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/AssetParameters/82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3VersionKeyB24971BE",
+            "trace": [
+              "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "RdsStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDB/AssetParameters/82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917ArtifactHashF095CE64",
+            "trace": [
+              "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "MainStack.addFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "RdsStack._prepareTemplateAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:210:48)",
+              "defineNestedStackAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
         ]
       },
       "displayName": "LegacyInfraStackDB"
@@ -833,7 +1294,7 @@
             "trace": [
               "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
               "new LegacySecretsManagerStack (/Users/mac/backend-api/cgl-op-infra/lib/secrets-manager-stack/secrets-manager-stack.ts:12:5)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:16:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -893,7 +1354,7 @@
               "UserPool.smsConfiguration (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:910:38)",
               "new UserPool (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:764:30)",
               "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:8:26)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -919,7 +1380,7 @@
             "trace": [
               "new UserPool (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:758:22)",
               "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:8:26)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -946,7 +1407,7 @@
               "new UserPoolClient (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool-client.ts:370:22)",
               "UserPool.addClient (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:630:12)",
               "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:41:33)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1004,7 +1465,7 @@
             "trace": [
               "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1102:18)",
               "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:16:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:18:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1077,7 +1538,7 @@
               "AssetCode.bind (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1104,7 +1565,7 @@
               "new Role (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:563:31)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1132,7 +1593,7 @@
               "Role.addToPrincipalPolicy (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
               "Function.addToRolePolicy (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:263:15)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:22:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1158,7 +1619,7 @@
             "trace": [
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:625:35)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1191,7 +1652,7 @@
               "AssetCode.bind (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1224,7 +1685,7 @@
               "AssetCode.bind (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1257,7 +1718,7 @@
               "AssetCode.bind (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
               "new Function (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:16:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1283,7 +1744,7 @@
             "trace": [
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:711:22)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1311,7 +1772,7 @@
               "RestApi._configureCloudWatchRole (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:496:18)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:728:12)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1338,7 +1799,7 @@
               "RestApi._configureCloudWatchRole (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:501:22)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:728:12)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1366,7 +1827,7 @@
               "RestApi._configureDeployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:529:32)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:731:10)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1394,7 +1855,7 @@
               "RestApi._configureDeployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:539:30)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:731:10)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1421,7 +1882,7 @@
               "RestApi._configureDeployment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:544:7)",
               "new RestApi (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:731:10)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:24:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1450,7 +1911,7 @@
               "new Method (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
               "RootResource.addMethod (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:33:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1479,7 +1940,7 @@
               "new Method (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
               "RootResource.addMethod (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:33:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
@@ -1506,7 +1967,7 @@
               "new Method (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
               "RootResource.addMethod (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
               "new SmsSenderServiceStack (/Users/mac/backend-api/cgl-op-infra/lib/sms-sender-stack/sms-sender-service-stack.ts:33:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:17:1)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:19:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
