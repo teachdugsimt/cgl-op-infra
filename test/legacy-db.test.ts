@@ -1,6 +1,6 @@
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as LegacyDb from '../lib/legacy-db-stack';
+import * as LegacyDb from '../lib/db-stack/legacy-db-stack';
 
 test('Empty Stack', () => {
     const app = new cdk.App();

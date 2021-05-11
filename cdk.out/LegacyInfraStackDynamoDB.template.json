@@ -1,0 +1,39 @@
+{
+  "Resources": {
+    "CGLUserAuthorize6E4E7F31": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "username",
+            "KeyType": "HASH"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "username",
+            "AttributeType": "S"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackDynamoDB/CGLUserAuthorize/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAEzWNUQrCMBBEz+L/dtulFxB6g+oF0mSFtHYXsokiIXfXKn7N8JjHENIw4nA6u6d1Pmx99ZoY6yU7v8HMpiV5hknFcio+w3STP21wSOElbtewYL265c7H4FtaA9HAuFr/oBGJPi+rxdilIjnujPMv34DDbn+CAAAA"
+      },
+      "Metadata": {
+        "aws:cdk:path": "LegacyInfraStackDynamoDB/CDKMetadata/Default"
+      }
+    }
+  }
+}

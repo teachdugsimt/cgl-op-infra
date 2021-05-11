@@ -1,5 +1,5 @@
 {
-  "version": "10.0.0",
+  "version": "11.0.0",
   "artifacts": {
     "Tree": {
       "type": "cdk:tree",
@@ -7,30 +7,31 @@
         "file": "tree.json"
       }
     },
-    "LegacyDbStack": {
+    "LegacyInfraStackDB": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/ap-southeast-1",
       "properties": {
-        "templateFile": "LegacyDbStack.template.json"
+        "templateFile": "LegacyInfraStackDB.template.json",
+        "validateOnSynth": false
       },
       "metadata": {
-        "/LegacyDbStack/CGLDevDbVPC/Resource": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPC7E479944",
             "trace": [
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1215:21)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1215:21)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -40,29 +41,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet1/Subnet": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1Subnet36C085FB",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
-              "new PublicSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -72,29 +73,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet1/RouteTable": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1RouteTable6FCA2C93",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
-              "new PublicSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -104,29 +105,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1RouteTableAssociation915F8DAF",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
-              "new PublicSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -136,26 +137,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet1/DefaultRoute": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1DefaultRoute7F8646AD",
             "trace": [
-              "PublicSubnet.addDefaultInternetRoute (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
+              "PublicSubnet.addDefaultInternetRoute (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
               "Array.forEach (<anonymous>)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -165,26 +166,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet1/EIP": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/EIP": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1EIP5F53B6B1",
             "trace": [
-              "PublicSubnet.addNatGateway (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1776:21)",
-              "NatGatewayProvider.configureNat (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
-              "Vpc.createNatGateways (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "PublicSubnet.addNatGateway (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1776:21)",
+              "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
+              "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -194,26 +195,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet1/NATGateway": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet1/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1NATGatewayC530F2E4",
             "trace": [
-              "PublicSubnet.addNatGateway (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1774:17)",
-              "NatGatewayProvider.configureNat (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
-              "Vpc.createNatGateways (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "PublicSubnet.addNatGateway (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1774:17)",
+              "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
+              "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -223,29 +224,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet2/Subnet": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2Subnet3F73FBE6",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
-              "new PublicSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -255,29 +256,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet2/RouteTable": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2RouteTable61DEF0AE",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
-              "new PublicSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -287,29 +288,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2RouteTableAssociation39EEB974",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
-              "new PublicSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -319,26 +320,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PublicSubnet2/DefaultRoute": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PublicSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2DefaultRouteFD6E836B",
             "trace": [
-              "PublicSubnet.addDefaultInternetRoute (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
+              "PublicSubnet.addDefaultInternetRoute (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
               "Array.forEach (<anonymous>)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -348,29 +349,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet1/Subnet": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1SubnetFECE3CD8",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
-              "new PrivateSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -380,29 +381,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet1/RouteTable": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1RouteTable4BEF98D8",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
-              "new PrivateSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -412,29 +413,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1RouteTableAssociationF9048BE1",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
-              "new PrivateSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -444,27 +445,27 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet1/DefaultRoute": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1DefaultRoute5149F426",
             "trace": [
-              "PrivateSubnet.addRoute (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
-              "NatGatewayProvider.configureSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
-              "NatGatewayProvider.configureNat (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
-              "Vpc.createNatGateways (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "PrivateSubnet.addRoute (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
+              "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -474,29 +475,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet2/Subnet": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2SubnetE562F1AB",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
-              "new PrivateSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -506,29 +507,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet2/RouteTable": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2RouteTable60CF480D",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
-              "new PrivateSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -538,29 +539,29 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2RouteTableAssociation1B058536",
             "trace": [
-              "new Subnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
-              "new PrivateSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "new Subnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
               "Array.forEach (<anonymous>)",
-              "Vpc.createSubnetResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
-              "Vpc.createSubnets (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "Vpc.createSubnetResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -570,27 +571,27 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/PrivateSubnet2/DefaultRoute": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/PrivateSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2DefaultRoute7503F0F4",
             "trace": [
-              "PrivateSubnet.addRoute (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
-              "NatGatewayProvider.configureSubnet (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
-              "NatGatewayProvider.configureNat (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
-              "Vpc.createNatGateways (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "PrivateSubnet.addRoute (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
+              "Vpc.createNatGateways (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -600,23 +601,23 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/IGW": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/IGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCIGW47416E1D",
             "trace": [
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1251:19)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1251:19)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -626,23 +627,23 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbVPC/VPCGW": [
+        "/LegacyInfraStackDB/CGLDevDbVPC/VPCGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCVPCGWC49B2C49",
             "trace": [
-              "new Vpc (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1257:19)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:15:17)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new Vpc (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1257:19)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -652,52 +653,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/LegacyDBSecret/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "LegacyDBSecret9B7F317F",
-            "trace": [
-              "new Secret (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:29:5)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
-            ]
-          }
-        ],
-        "/LegacyDbStack/CGLDevDbInstance/SubnetGroup/Default": [
+        "/LegacyInfraStackDB/CGLDevDbInstance/SubnetGroup/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSubnetGroup6DFABB5C",
             "trace": [
-              "new SubnetGroup (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/subnet-group.ts:78:25)",
-              "new DatabaseInstanceNew (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:657:46)",
-              "new DatabaseInstanceSource (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:840:5)",
-              "new DatabaseInstance (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:983:5)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:38:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new SubnetGroup (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/subnet-group.ts:78:25)",
+              "new DatabaseInstanceNew (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:657:46)",
+              "new DatabaseInstanceSource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:840:5)",
+              "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:983:5)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -707,26 +682,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbInstance/SecurityGroup/Resource": [
+        "/LegacyInfraStackDB/CGLDevDbInstance/SecurityGroup/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSecurityGroupAF3DA919",
             "trace": [
-              "new SecurityGroup (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:429:26)",
-              "new DatabaseInstanceNew (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:664:53)",
-              "new DatabaseInstanceSource (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:840:5)",
-              "new DatabaseInstance (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:983:5)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:38:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new SecurityGroup (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:429:26)",
+              "new DatabaseInstanceNew (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:664:53)",
+              "new DatabaseInstanceSource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:840:5)",
+              "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:983:5)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -736,26 +711,26 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbInstance/Secret/Resource": [
+        "/LegacyInfraStackDB/CGLDevDbInstance/Secret/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyDbStackCGLDevDbInstanceSecret6BBD10CE3fdaad7efa858a3daf9490cf0a702aeb",
+            "data": "LegacyInfraStackDBCGLDevDbInstanceSecret5FFC2BFA3fdaad7efa858a3daf9490cf0a702aeb",
             "trace": [
-              "new Secret (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
-              "new DatabaseSecret (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:67:5)",
-              "Object.renderCredentials (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
-              "new DatabaseInstance (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:985:25)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:38:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
+              "new DatabaseSecret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:67:5)",
+              "Object.renderCredentials (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
+              "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:985:25)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -765,25 +740,25 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbInstance/Secret/Attachment/Resource": [
+        "/LegacyInfraStackDB/CGLDevDbInstance/Secret/Attachment/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSecretAttachmentA477E855",
             "trace": [
-              "new SecretTargetAttachment (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:655:24)",
-              "DatabaseSecret.attach (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:317:12)",
-              "new DatabaseInstance (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:1008:28)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:38:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new SecretTargetAttachment (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:655:24)",
+              "DatabaseSecret.attach (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:317:12)",
+              "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:1008:28)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -793,23 +768,23 @@
             ]
           }
         ],
-        "/LegacyDbStack/CGLDevDbInstance/Resource": [
+        "/LegacyInfraStackDB/CGLDevDbInstance/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstance075828F1",
             "trace": [
-              "new DatabaseInstance (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/aws-rds/lib/instance.ts:988:22)",
-              "new LegacyDbStack (/Users/mac/backend-api/legacy-db-cdn/lib/legacy-db-stack.ts:38:22)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/bin/legacy-db.ts:9:1)",
+              "new DatabaseInstance (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:988:22)",
+              "new LegacyDbStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/legacy-db-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Module.m._compile (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
               "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/index.ts:1059:12)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
               "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
               "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "main (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:198:14)",
-              "Object.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/ts-node/src/bin.ts:288:3)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
               "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
               "Module.load (internal/modules/cjs/loader.js:996:32)",
@@ -819,29 +794,258 @@
             ]
           }
         ],
-        "/LegacyDbStack/CDKMetadata/Default": [
+        "/LegacyInfraStackDB/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
             "trace": [
-              "new MetadataResource (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
-              "/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
-              "visit (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
-              "visit (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
-              "injectMetadataResources (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
-              "Object.synthesize (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
-              "App.synth (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
-              "process.<anonymous> (/Users/mac/backend-api/legacy-db-cdn/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "new MetadataResource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
               "Object.onceWrapper (events.js:422:26)",
               "process.emit (events.js:315:20)",
               "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/legacy-db-cdn/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
               "process.topLevelDomainCallback (domain.js:137:15)"
             ]
           }
         ]
       },
-      "displayName": "LegacyDbStack"
+      "displayName": "LegacyInfraStackDB"
+    },
+    "LegacyInfraStackSecretsHashKey": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "LegacyInfraStackSecretsHashKey.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/LegacyInfraStackSecretsHashKey/LegacyDBSecret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LegacyDBSecret9B7F317F",
+            "trace": [
+              "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
+              "new LegacySecretsManagerStack (/Users/mac/backend-api/cgl-op-infra/lib/secrets-manager-stack/secrets-manager-stack.ts:12:5)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackSecretsHashKey/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      },
+      "displayName": "LegacyInfraStackSecretsHashKey"
+    },
+    "LegacyInfraStackCognito": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "LegacyInfraStackCognito.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/LegacyInfraStackCognito/CglUserPool/smsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserPoolsmsRole0CBFEECC",
+            "trace": [
+              "new Role (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "UserPool.smsConfiguration (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:910:38)",
+              "new UserPool (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:764:30)",
+              "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:8:26)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackCognito/CglUserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserPool713659A1",
+            "trace": [
+              "new UserPool (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:758:22)",
+              "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:8:26)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackCognito/CglUserPool/CglAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserPoolCglAppClient77A6A93A",
+            "trace": [
+              "new UserPoolClient (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool-client.ts:370:22)",
+              "UserPool.addClient (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:630:12)",
+              "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:41:33)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackCognito/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      },
+      "displayName": "LegacyInfraStackCognito"
+    },
+    "LegacyInfraStackDynamoDB": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "LegacyInfraStackDynamoDB.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/LegacyInfraStackDynamoDB/CGLUserAuthorize/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLUserAuthorize6E4E7F31",
+            "trace": [
+              "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1102:18)",
+              "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LegacyInfraStackDynamoDB/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      },
+      "displayName": "LegacyInfraStackDynamoDB"
     }
   }
 }
