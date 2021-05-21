@@ -18,7 +18,8 @@
         "ProvisionedThroughput": {
           "ReadCapacityUnits": 5,
           "WriteCapacityUnits": 5
-        }
+        },
+        "TableName": "Authentication"
       },
       "UpdateReplacePolicy": "Retain",
       "DeletionPolicy": "Retain",

@@ -7,6 +7,7 @@ export class DynamoDBStack extends cdk.Stack {
         super(scope, id, props);
         // dynamo db
         new dynamodb.Table(this, 'CGLUserAuthorize', {
+            tableName: "Authentication",
             partitionKey: { name: 'username', type: dynamodb.AttributeType.STRING },
         });
 

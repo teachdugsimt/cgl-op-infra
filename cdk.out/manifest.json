@@ -1458,6 +1458,35 @@
         "validateOnSynth": false
       },
       "metadata": {
+        "/LegacyInfraStackDynamoDB/CGLUserAuthorize": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "CGLUserAuthorize6E4E7F31"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1129:38)",
+              "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:996:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
         "/LegacyInfraStackDynamoDB/CGLUserAuthorize/Resource": [
           {
             "type": "aws:cdk:logicalId",

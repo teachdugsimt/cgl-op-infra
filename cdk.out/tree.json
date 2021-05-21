@@ -1462,7 +1462,8 @@
                     "provisionedThroughput": {
                       "readCapacityUnits": 5,
                       "writeCapacityUnits": 5
-                    }
+                    },
+                    "tableName": "Authentication"
                   }
                 },
                 "constructInfo": {
