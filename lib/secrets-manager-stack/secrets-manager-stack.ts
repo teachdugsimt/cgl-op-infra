@@ -7,7 +7,7 @@ export class LegacySecretsManagerStack extends cdk.Stack {
     super(scope, id, props);
 
     const secrets_name_hash_key: string = "CGLDevHashKey"
-    const secrets_id_hash_key: string = "LegacyDBSecret"
+    const secrets_id_hash_key: string = "DynamoDBSecret"
 
     new secretsmanager.Secret(this, secrets_id_hash_key, {
       description: "Hashing key",

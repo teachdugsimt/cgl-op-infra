@@ -30,7 +30,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAAEzWNUQrCMBBEz+L/dtulFxB6g+oF0mSFtHYXsokiIXfXKn7N8JjHENIw4nA6u6d1Pmx99ZoY6yU7v8HMpiV5hknFcio+w3STP21wSOElbtewYL265c7H4FtaA9HAuFr/oBGJPi+rxdilIjnujPMv34DDbn+CAAAA"
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAEzWLQQrCMBBFz9L9dNpBcC30BtULpMkIae0MZBJFQu4uVVz9x+N9QhrPSN3Fvaz3YRuq18RYr9n5DWY2LckzTCqWU/EZprv8bYPjFN7idg0L1ptbHnwEX2gNRAPjasOTTkiEY7dajH0qkuPOOP/2A2NrP8SCAAAA"
       },
       "Metadata": {
         "aws:cdk:path": "LegacyInfraStackDynamoDB/CDKMetadata/Default"

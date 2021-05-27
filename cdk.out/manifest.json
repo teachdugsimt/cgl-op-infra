@@ -7,25 +7,25 @@
         "file": "tree.json"
       }
     },
-    "LegacyInfraStackDB": {
+    "InfraStackDB": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/ap-southeast-1",
       "properties": {
-        "templateFile": "LegacyInfraStackDB.template.json",
+        "templateFile": "InfraStackDB.template.json",
         "validateOnSynth": false
       },
       "metadata": {
-        "/LegacyInfraStackDB": [
+        "/InfraStackDB": [
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "LegacyInfraStackDBlegacyvpcresources8B2FEE26.nested.template.json",
-              "id": "4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f",
+              "path": "InfraStackDBCglVpcResourcesCDBC47EF.nested.template.json",
+              "id": "37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7",
               "packaging": "file",
-              "sourceHash": "4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f",
-              "s3BucketParameter": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3Bucket60D42C6E",
-              "s3KeyParameter": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3VersionKeyB90C4F02",
-              "artifactHashParameter": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fArtifactHash8A09034A"
+              "sourceHash": "37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7",
+              "s3BucketParameter": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3BucketE7DB8739",
+              "s3KeyParameter": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3VersionKeyD89F8487",
+              "artifactHashParameter": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7ArtifactHash4786F138"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
@@ -50,13 +50,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "LegacyInfraStackDBlegacyrdsresources2E440312.nested.template.json",
-              "id": "82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917",
+              "path": "InfraStackDBCglRdsResourcesB71B7EC2.nested.template.json",
+              "id": "fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab",
               "packaging": "file",
-              "sourceHash": "82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917",
-              "s3BucketParameter": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3BucketC87678FE",
-              "s3KeyParameter": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3VersionKeyB24971BE",
-              "artifactHashParameter": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917ArtifactHashF095CE64"
+              "sourceHash": "fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab",
+              "s3BucketParameter": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3Bucket00D52CAA",
+              "s3KeyParameter": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3VersionKey0798EDBF",
+              "artifactHashParameter": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babArtifactHash6EA5AA5B"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
@@ -79,7 +79,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/Resource": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPC7E479944",
@@ -106,7 +106,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/Subnet": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1Subnet36C085FB",
@@ -139,7 +139,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/RouteTable": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1RouteTable6FCA2C93",
@@ -172,7 +172,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1RouteTableAssociation915F8DAF",
@@ -205,7 +205,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/DefaultRoute": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1DefaultRoute7F8646AD",
@@ -235,7 +235,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/EIP": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/EIP": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1EIP5F53B6B1",
@@ -265,7 +265,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet1/NATGateway": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet1NATGatewayC530F2E4",
@@ -295,7 +295,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/Subnet": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2Subnet3F73FBE6",
@@ -328,7 +328,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/RouteTable": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2RouteTable61DEF0AE",
@@ -361,7 +361,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2RouteTableAssociation39EEB974",
@@ -394,7 +394,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PublicSubnet2/DefaultRoute": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPublicSubnet2DefaultRouteFD6E836B",
@@ -424,7 +424,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/Subnet": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1SubnetFECE3CD8",
@@ -457,7 +457,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/RouteTable": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1RouteTable4BEF98D8",
@@ -490,7 +490,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1RouteTableAssociationF9048BE1",
@@ -523,7 +523,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet1/DefaultRoute": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet1DefaultRoute5149F426",
@@ -554,7 +554,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/Subnet": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2SubnetE562F1AB",
@@ -587,7 +587,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/RouteTable": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2RouteTable60CF480D",
@@ -620,7 +620,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2RouteTableAssociation1B058536",
@@ -653,7 +653,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/PrivateSubnet2/DefaultRoute": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCPrivateSubnet2DefaultRoute7503F0F4",
@@ -684,7 +684,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/IGW": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/IGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCIGW47416E1D",
@@ -711,7 +711,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CGLDevDbVPC/VPCGW": [
+        "/InfraStackDB/CglVpcResources/CGLDevDbVPC/VPCGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbVPCVPCGWC49B2C49",
@@ -738,7 +738,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/CDKMetadata/Default": [
+        "/InfraStackDB/CglVpcResources/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -760,10 +760,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref": [
+        "/InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref",
+            "data": "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
             "trace": [
               "createNestedStackOutput (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
               "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
@@ -780,10 +780,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef": [
+        "/InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef",
+            "data": "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
             "trace": [
               "createNestedStackOutput (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
               "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
@@ -800,10 +800,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources/LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref": [
+        "/InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref",
+            "data": "InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
             "trace": [
               "createNestedStackOutput (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
               "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
@@ -820,10 +820,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-vpc-resources.NestedStack/legacy-vpc-resources.NestedStackResource": [
+        "/InfraStackDB/CglVpcResources.NestedStack/CglVpcResources.NestedStackResource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "legacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResourceD890F6CC",
+            "data": "CglVpcResourcesNestedStackCglVpcResourcesNestedStackResource47ACCFFC",
             "trace": [
               "new NestedStack (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:21)",
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:9)",
@@ -847,7 +847,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/SubnetGroup/Default": [
+        "/InfraStackDB/CglRdsResources/CGLDevDbInstance/SubnetGroup/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSubnetGroup6DFABB5C",
@@ -877,7 +877,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/SecurityGroup/Resource": [
+        "/InfraStackDB/CglRdsResources/CGLDevDbInstance/SecurityGroup/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSecurityGroupAF3DA919",
@@ -907,10 +907,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/Secret/Resource": [
+        "/InfraStackDB/CglRdsResources/CGLDevDbInstance/Secret/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyInfraStackDBlegacyrdsresourcesCGLDevDbInstanceSecret12A518E33fdaad7efa858a3daf9490cf0a702aeb",
+            "data": "InfraStackDBCglRdsResourcesCGLDevDbInstanceSecret39CC97C43fdaad7efa858a3daf9490cf0a702aeb",
             "trace": [
               "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
               "new DatabaseSecret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:67:5)",
@@ -937,7 +937,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/Secret/Attachment/Resource": [
+        "/InfraStackDB/CglRdsResources/CGLDevDbInstance/Secret/Attachment/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstanceSecretAttachmentA477E855",
@@ -966,7 +966,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/CGLDevDbInstance/Resource": [
+        "/InfraStackDB/CglRdsResources/CGLDevDbInstance/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLDevDbInstance075828F1",
@@ -993,7 +993,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/CDKMetadata/Default": [
+        "/InfraStackDB/CglRdsResources/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1015,10 +1015,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/reference-to-LegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787.Outputs.LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref": [
+        "/InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "referencetoLegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787OutputsLegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet1Subnet15D286C2Ref",
+            "data": "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
             "trace": [
               "createNestedStackParameter (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
               "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
@@ -1036,10 +1036,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/reference-to-LegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787.Outputs.LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef": [
+        "/InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "referencetoLegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787OutputsLegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPCPublicSubnet2Subnet5E835A3BRef",
+            "data": "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
             "trace": [
               "createNestedStackParameter (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
               "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
@@ -1057,10 +1057,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources/reference-to-LegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787.Outputs.LegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref": [
+        "/InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "referencetoLegacyInfraStackDBlegacyvpcresourcesNestedStacklegacyvpcresourcesNestedStackResource2D7FB787OutputsLegacyInfraStackDBlegacyvpcresourcesCGLDevDbVPC885C7955Ref",
+            "data": "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
             "trace": [
               "createNestedStackParameter (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
               "resolveValue (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
@@ -1078,10 +1078,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/legacy-rds-resources.NestedStack/legacy-rds-resources.NestedStackResource": [
+        "/InfraStackDB/CglRdsResources.NestedStack/CglRdsResources.NestedStackResource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "legacyrdsresourcesNestedStacklegacyrdsresourcesNestedStackResource466996BC",
+            "data": "CglRdsResourcesNestedStackCglRdsResourcesNestedStackResourceDBFAF75B",
             "trace": [
               "new NestedStack (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:21)",
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:12:5)",
@@ -1105,7 +1105,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/CDKMetadata/Default": [
+        "/InfraStackDB/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1126,10 +1126,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/AssetParameters/4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f/S3Bucket": [
+        "/InfraStackDB/AssetParameters/37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3Bucket60D42C6E",
+            "data": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3BucketE7DB8739",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1151,10 +1151,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/AssetParameters/4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f/S3VersionKey": [
+        "/InfraStackDB/AssetParameters/37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fS3VersionKeyB90C4F02",
+            "data": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3VersionKeyD89F8487",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1176,10 +1176,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/AssetParameters/4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271f/ArtifactHash": [
+        "/InfraStackDB/AssetParameters/37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters4331f748a285ea6f00f56308c57cd7e4a12ce037cfee2725972daaeb87e1271fArtifactHash8A09034A",
+            "data": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7ArtifactHash4786F138",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1201,10 +1201,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/AssetParameters/82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917/S3Bucket": [
+        "/InfraStackDB/AssetParameters/fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3BucketC87678FE",
+            "data": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3Bucket00D52CAA",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1226,10 +1226,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/AssetParameters/82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917/S3VersionKey": [
+        "/InfraStackDB/AssetParameters/fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917S3VersionKeyB24971BE",
+            "data": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3VersionKey0798EDBF",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1251,10 +1251,10 @@
             ]
           }
         ],
-        "/LegacyInfraStackDB/AssetParameters/82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917/ArtifactHash": [
+        "/InfraStackDB/AssetParameters/fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters82879b9c7c06b8b1626e34b6d2e8194bf877f767e82a2b0879612ce3d95fa917ArtifactHashF095CE64",
+            "data": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babArtifactHash6EA5AA5B",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1277,20 +1277,20 @@
           }
         ]
       },
-      "displayName": "LegacyInfraStackDB"
+      "displayName": "InfraStackDB"
     },
-    "LegacyInfraStackSecretsHashKey": {
+    "InfraStackSecretsHashKey": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/ap-southeast-1",
       "properties": {
-        "templateFile": "LegacyInfraStackSecretsHashKey.template.json",
+        "templateFile": "InfraStackSecretsHashKey.template.json",
         "validateOnSynth": false
       },
       "metadata": {
-        "/LegacyInfraStackSecretsHashKey/LegacyDBSecret/Resource": [
+        "/InfraStackSecretsHashKey/DynamoDBSecret/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "LegacyDBSecret9B7F317F",
+            "data": "DynamoDBSecret997CCAAF",
             "trace": [
               "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
               "new LegacySecretsManagerStack (/Users/mac/backend-api/cgl-op-infra/lib/secrets-manager-stack/secrets-manager-stack.ts:12:5)",
@@ -1313,7 +1313,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackSecretsHashKey/CDKMetadata/Default": [
+        "/InfraStackSecretsHashKey/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1335,17 +1335,17 @@
           }
         ]
       },
-      "displayName": "LegacyInfraStackSecretsHashKey"
+      "displayName": "InfraStackSecretsHashKey"
     },
-    "LegacyInfraStackCognito": {
+    "InfraStackCognito": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/ap-southeast-1",
       "properties": {
-        "templateFile": "LegacyInfraStackCognito.template.json",
+        "templateFile": "InfraStackCognito.template.json",
         "validateOnSynth": false
       },
       "metadata": {
-        "/LegacyInfraStackCognito/CglUserPool/smsRole/Resource": [
+        "/InfraStackCognito/CglUserPool/smsRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CglUserPoolsmsRole0CBFEECC",
@@ -1373,7 +1373,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackCognito/CglUserPool/Resource": [
+        "/InfraStackCognito/CglUserPool/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CglUserPool713659A1",
@@ -1399,7 +1399,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackCognito/CglUserPool/CglAppClient/Resource": [
+        "/InfraStackCognito/CglUserPool/CglAppClient/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CglUserPoolCglAppClient77A6A93A",
@@ -1426,7 +1426,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackCognito/CDKMetadata/Default": [
+        "/InfraStackCognito/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1448,17 +1448,17 @@
           }
         ]
       },
-      "displayName": "LegacyInfraStackCognito"
+      "displayName": "InfraStackCognito"
     },
-    "LegacyInfraStackDynamoDB": {
+    "InfraStackDynamoDB": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/ap-southeast-1",
       "properties": {
-        "templateFile": "LegacyInfraStackDynamoDB.template.json",
+        "templateFile": "InfraStackDynamoDB.template.json",
         "validateOnSynth": false
       },
       "metadata": {
-        "/LegacyInfraStackDynamoDB/CGLUserAuthorize": [
+        "/InfraStackDynamoDB/CGLUserAuthorize": [
           {
             "type": "aws:cdk:hasPhysicalName",
             "data": {
@@ -1466,7 +1466,7 @@
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
-              "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1129:38)",
+              "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1137:38)",
               "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
@@ -1487,12 +1487,12 @@
             ]
           }
         ],
-        "/LegacyInfraStackDynamoDB/CGLUserAuthorize/Resource": [
+        "/InfraStackDynamoDB/CGLUserAuthorize/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CGLUserAuthorize6E4E7F31",
             "trace": [
-              "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1102:18)",
+              "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1109:18)",
               "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
               "Module._compile (internal/modules/cjs/loader.js:1147:30)",
@@ -1513,7 +1513,7 @@
             ]
           }
         ],
-        "/LegacyInfraStackDynamoDB/CDKMetadata/Default": [
+        "/InfraStackDynamoDB/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1535,7 +1535,7 @@
           }
         ]
       },
-      "displayName": "LegacyInfraStackDynamoDB"
+      "displayName": "InfraStackDynamoDB"
     }
   }
 }

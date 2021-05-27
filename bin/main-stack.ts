@@ -9,7 +9,7 @@ import { DynamoDBStack } from '../lib/dynamo-db-stack/dynamo-db-stack';
 const app = new cdk.App();
 
 const envSgp = { region: 'ap-southeast-1' }
-new MainStack(app, 'LegacyInfraStackDB', { env: envSgp });
-new LegacySecretsManagerStack(app, 'LegacyInfraStackSecretsHashKey', { env: envSgp });
-new CognitoStack(app, 'LegacyInfraStackCognito', { env: envSgp });
-new DynamoDBStack(app, 'LegacyInfraStackDynamoDB', { env: envSgp });
+new MainStack(app, 'InfraStackDB', { env: envSgp });
+new LegacySecretsManagerStack(app, 'InfraStackSecretsHashKey', { env: envSgp });
+new CognitoStack(app, 'InfraStackCognito', { env: envSgp });
+new DynamoDBStack(app, 'InfraStackDynamoDB', { env: envSgp });

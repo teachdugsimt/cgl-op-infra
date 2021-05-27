@@ -142,7 +142,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAAE02OXQrCMBCEz+J7um3oBYRcQCIeoKSrbJvuQn70IeTuphbFpxlmPobRoIcRhtN5esXOzWtfnASEck2TW5URjilkl5S5s8UoOTisamcb92BKAuUWMVxE/M78/NcYT8jpvzqSqmjaoFjx+NluWmtVLDPCEvunHkHr9muJRF3InGhDsIe+ASzMGa+0AAAA"
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAE02MQQrCMBBFz9J9Om0QXAu5gFQ8QEhHSZtmIDOpi5C721oUV//x/+Nr0P0ZdHOxL27dOHfFUUIoN7FuVoYiS8pOlHnEAZlycljV7m7eM3ohKHfGdCUKu/PjL5jgMcr/dDRVebtAGSjg53vLWquKNCJM3K36BFpD30zsfZtyFL8gDEe+AdYtqSi0AAAA"
       },
       "Metadata": {
         "aws:cdk:path": "LegacyInfraStackCognito/CDKMetadata/Default"
