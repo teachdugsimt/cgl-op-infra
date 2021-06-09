@@ -20,12 +20,12 @@
             "type": "aws:cdk:asset",
             "data": {
               "path": "InfraStackDBCglVpcResourcesCDBC47EF.nested.template.json",
-              "id": "37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7",
+              "id": "e3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9",
               "packaging": "file",
-              "sourceHash": "37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7",
-              "s3BucketParameter": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3BucketE7DB8739",
-              "s3KeyParameter": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3VersionKeyD89F8487",
-              "artifactHashParameter": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7ArtifactHash4786F138"
+              "sourceHash": "e3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9",
+              "s3BucketParameter": "AssetParameterse3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9S3Bucket0FE17AF9",
+              "s3KeyParameter": "AssetParameterse3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9S3VersionKeyB2A6DD67",
+              "artifactHashParameter": "AssetParameterse3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9ArtifactHashC3331F52"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
@@ -40,23 +40,22 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           },
           {
             "type": "aws:cdk:asset",
             "data": {
               "path": "InfraStackDBCglRdsResourcesB71B7EC2.nested.template.json",
-              "id": "fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab",
+              "id": "9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8",
               "packaging": "file",
-              "sourceHash": "fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab",
-              "s3BucketParameter": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3Bucket00D52CAA",
-              "s3KeyParameter": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3VersionKey0798EDBF",
-              "artifactHashParameter": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babArtifactHash6EA5AA5B"
+              "sourceHash": "9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8",
+              "s3BucketParameter": "AssetParameters9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8S3Bucket5D2429A3",
+              "s3KeyParameter": "AssetParameters9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8S3VersionKey5ECF1173",
+              "artifactHashParameter": "AssetParameters9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8ArtifactHash8381C26F"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
@@ -71,11 +70,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -88,21 +86,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -121,21 +119,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -154,21 +152,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -187,21 +185,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -217,21 +215,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -247,21 +245,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -277,21 +275,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -310,21 +308,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -343,21 +341,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -376,21 +374,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -406,21 +404,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -439,21 +437,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -472,21 +470,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -505,21 +503,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -536,21 +534,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -569,21 +567,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -602,21 +600,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -635,21 +633,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -666,21 +664,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -693,21 +691,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -720,21 +718,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:9:20)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -752,11 +750,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -772,11 +769,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -792,11 +788,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -812,11 +807,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -829,21 +823,21 @@
               "new VpcStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:9)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -859,21 +853,21 @@
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -889,21 +883,21 @@
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -919,21 +913,21 @@
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -948,21 +942,21 @@
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -975,21 +969,21 @@
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1007,11 +1001,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -1028,11 +1021,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -1049,11 +1041,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -1070,11 +1061,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
@@ -1087,21 +1077,21 @@
               "new RdsStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/rds-stack.ts:12:5)",
               "new MainStack (/Users/mac/backend-api/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:12:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1118,18 +1108,17 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
-        "/InfraStackDB/AssetParameters/37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7/S3Bucket": [
+        "/InfraStackDB/AssetParameters/e3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3BucketE7DB8739",
+            "data": "AssetParameterse3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9S3Bucket0FE17AF9",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1143,18 +1132,17 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
-        "/InfraStackDB/AssetParameters/37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7/S3VersionKey": [
+        "/InfraStackDB/AssetParameters/e3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7S3VersionKeyD89F8487",
+            "data": "AssetParameterse3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9S3VersionKeyB2A6DD67",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1168,18 +1156,17 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
-        "/InfraStackDB/AssetParameters/37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7/ArtifactHash": [
+        "/InfraStackDB/AssetParameters/e3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters37aedfb4c82d2efbf84f2abc2c4504035546439be8aeb3efbd3755f9c2eb57e7ArtifactHash4786F138",
+            "data": "AssetParameterse3abc6497d2b7c683f01e81b8e7bf5c8cc12cd3c81f8a3daafcaa37a0161ddc9ArtifactHashC3331F52",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1193,18 +1180,17 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
-        "/InfraStackDB/AssetParameters/fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab/S3Bucket": [
+        "/InfraStackDB/AssetParameters/9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3Bucket00D52CAA",
+            "data": "AssetParameters9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8S3Bucket5D2429A3",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1218,18 +1204,17 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
-        "/InfraStackDB/AssetParameters/fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab/S3VersionKey": [
+        "/InfraStackDB/AssetParameters/9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babS3VersionKey0798EDBF",
+            "data": "AssetParameters9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8S3VersionKey5ECF1173",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1243,18 +1228,17 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ],
-        "/InfraStackDB/AssetParameters/fca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3bab/ArtifactHash": [
+        "/InfraStackDB/AssetParameters/9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersfca703429b3394ba6db93c63f1f1572b0c7fc2cb7adde95ce5de0bdbbb7c3babArtifactHash6EA5AA5B",
+            "data": "AssetParameters9b4da0fe582e6575d7204c240a14023233c9780019c09c2b502a62bb6187fce8ArtifactHash8381C26F",
             "trace": [
               "new FileAssetParameters (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
@@ -1268,11 +1252,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ]
@@ -1295,21 +1278,21 @@
               "new Secret (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:450:22)",
               "new LegacySecretsManagerStack (/Users/mac/backend-api/cgl-op-infra/lib/secrets-manager-stack/secrets-manager-stack.ts:12:5)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:13:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1326,11 +1309,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ]
@@ -1355,21 +1337,21 @@
               "new UserPool (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:764:30)",
               "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:8:26)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1381,21 +1363,21 @@
               "new UserPool (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:758:22)",
               "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:8:26)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1408,21 +1390,21 @@
               "UserPool.addClient (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:630:12)",
               "new CognitoStack (/Users/mac/backend-api/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:41:33)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:14:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1439,11 +1421,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ]
@@ -1469,21 +1450,21 @@
               "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1137:38)",
               "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1495,21 +1476,21 @@
               "new Table (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1109:18)",
               "new DynamoDBStack (/Users/mac/backend-api/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:9:9)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:15:1)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
-              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
               "Object.require.extensions.<computed> [as .ts] (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
               "main (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
-              "Module._compile (internal/modules/cjs/loader.js:1147:30)",
-              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
-              "Module.load (internal/modules/cjs/loader.js:996:32)",
-              "Function.Module._load (internal/modules/cjs/loader.js:896:14)",
-              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
-              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
@@ -1526,11 +1507,10 @@
               "Object.synthesize (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
               "App.synth (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
               "process.<anonymous> (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
-              "Object.onceWrapper (events.js:422:26)",
-              "process.emit (events.js:315:20)",
-              "process.EventEmitter.emit (domain.js:485:12)",
-              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)",
-              "process.topLevelDomainCallback (domain.js:137:15)"
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/mac/backend-api/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
             ]
           }
         ]

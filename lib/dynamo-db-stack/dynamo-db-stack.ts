@@ -9,6 +9,9 @@ export class DynamoDBStack extends cdk.Stack {
         new dynamodb.Table(this, 'CGLUserAuthorize', {
             tableName: "cgl_user_authentication",
             partitionKey: { name: 'username', type: dynamodb.AttributeType.STRING },
+            // TableEncryption.CUSTOMER_MANAGED
+            // encryption: dynamodb.TableEncryption.CUSTOMER_MANAGED,
+            // encryptionKey:  {password: },
         });
 
     }
