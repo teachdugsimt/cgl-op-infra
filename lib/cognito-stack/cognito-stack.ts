@@ -4,46 +4,57 @@ export class CognitoStack extends cdk.Stack {
 
     constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
+
         // cognito
-        const userPool = new cognito.UserPool(this, 'CglUserPool', {
-            userPoolName: 'CglUserAuthorizationPool',
+        const userPool = new cognito.UserPool(this, 'CglUserAuthentication', {
+            userPoolName: 'CglUserAuthentication',
             selfSignUpEnabled: true,
-            userVerification: {
-                emailSubject: 'Verify your email for our awesome app!!',
-                emailBody: 'Thanks for signing up to our awesome app!! Your verification code is {####}',
-                emailStyle: cognito.VerificationEmailStyle.CODE,
-                smsMessage: 'Thanks for signing up to our awesome app!! Your verification code is {####}',
-            },
+            signInCaseSensitive: true,
             signInAliases: {
                 email: true,
                 phone: true,
             },
             autoVerify: {
-                email: true,
-                phone: true
+                email: false,
+                phone: false
+            },
+            mfa: cognito.Mfa.OFF,
+            smsRole: undefined,
+            customAttributes: {
+                userId: new cognito.StringAttribute({ minLen: 8, maxLen: 12, mutable: true })
             },
             accountRecovery: cognito.AccountRecovery.EMAIL_ONLY,
-            mfa: cognito.Mfa.REQUIRED,
-            mfaSecondFactor: {
-                sms: true,
-                otp: true,
-            },
             passwordPolicy: {
-                minLength: 12,
-                requireLowercase: true,
-                requireUppercase: true,
-                requireDigits: true,
-                requireSymbols: true,
-                // tempPasswordValidity: cdk.Duration.days(3),
+                minLength: 8,
             },
         });
-        
-        const client = userPool.addClient('CglAppClient', {
+
+        const clientWriteAttributes = (new cognito.ClientAttributes())
+            .withStandardAttributes({
+                fullname: true,
+                email: true,
+                phoneNumber: true,
+            })
+            .withCustomAttributes('userId');
+
+        const clientReadAttributes = clientWriteAttributes
+
+        const client = userPool.addClient('CglUserAppClient', {
+            userPoolClientName: 'CglUserAutheAppClient',
             accessTokenValidity: cdk.Duration.minutes(60),
             idTokenValidity: cdk.Duration.minutes(60),
             refreshTokenValidity: cdk.Duration.days(30),
-        })
-        client.userPoolClientId
+            authFlows: {
+                custom: true,
+                userSrp: true,
+            },
+            preventUserExistenceErrors: true,
+            writeAttributes: clientWriteAttributes,
+            readAttributes: clientReadAttributes,
+        });
+
+        const clientId = client.userPoolClientId;
+        const userPoolId = userPool.userPoolId;
 
     }
 }
