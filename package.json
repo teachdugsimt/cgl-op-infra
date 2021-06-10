@@ -19,18 +19,17 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/assert": "^1.106.1",
-    "@aws-cdk/aws-apigateway": "^1.106.1",
-    "@aws-cdk/aws-cognito": "^1.106.1",
-    "@aws-cdk/aws-dynamodb": "^1.106.1",
-    "@aws-cdk/aws-ec2": "^1.106.1",
-    "@aws-cdk/aws-iam": "^1.106.1",
-    "@aws-cdk/aws-lambda": "^1.106.1",
-    "@aws-cdk/aws-rds": "^1.106.1",
-    "@aws-cdk/aws-s3": "^1.106.1",
-    "@aws-cdk/aws-secretsmanager": "^1.106.1",
-    "@aws-cdk/core": "^1.106.1",
-    "aws-sdk": "^2.904.0",
+    "@aws-cdk/assert": "*",
+    "@aws-cdk/aws-apigateway": "*",
+    "@aws-cdk/aws-cognito": "*",
+    "@aws-cdk/aws-dynamodb": "*",
+    "@aws-cdk/aws-ec2": "*",
+    "@aws-cdk/aws-iam": "*",
+    "@aws-cdk/aws-lambda": "*",
+    "@aws-cdk/aws-rds": "*",
+    "@aws-cdk/aws-s3": "*",
+    "@aws-cdk/aws-secretsmanager": "*",
+    "@aws-cdk/core": "*",
     "source-map-support": "^0.5.16"
   }
 }

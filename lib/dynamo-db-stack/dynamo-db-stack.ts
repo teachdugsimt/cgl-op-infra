@@ -14,5 +14,13 @@ export class DynamoDBStack extends cdk.Stack {
             // encryptionKey:  {password: },
         });
 
+        new dynamodb.Table(this, 'CGLAttachCode', {
+            tableName: "cgl_attach_code",
+            partitionKey: { name: 'attach_code', type: dynamodb.AttributeType.STRING },
+            // TableEncryption.CUSTOMER_MANAGED
+            // encryption: dynamodb.TableEncryption.CUSTOMER_MANAGED,
+            // encryptionKey:  {password: },
+        });
+
     }
 }

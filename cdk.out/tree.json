@@ -1485,6 +1485,54 @@
               "version": "1.106.1"
             }
           },
+          "CGLAttachCode": {
+            "id": "CGLAttachCode",
+            "path": "InfraStackDynamoDB/CGLAttachCode",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraStackDynamoDB/CGLAttachCode/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "keySchema": [
+                      {
+                        "attributeName": "attach_code",
+                        "keyType": "HASH"
+                      }
+                    ],
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "attach_code",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "cgl_attach_code"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
+                  "version": "1.106.1"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "InfraStackDynamoDB/CGLAttachCode/ScalingRole",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.106.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-dynamodb.Table",
+              "version": "1.106.1"
+            }
+          },
           "CDKMetadata": {
             "id": "CDKMetadata",
             "path": "InfraStackDynamoDB/CDKMetadata",
@@ -1492,6 +1540,67 @@
               "Default": {
                 "id": "Default",
                 "path": "InfraStackDynamoDB/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.106.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.106.1"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.106.1"
+        }
+      },
+      "InfraStackS3CargolinkDocument": {
+        "id": "InfraStackS3CargolinkDocument",
+        "path": "InfraStackS3CargolinkDocument",
+        "children": {
+          "InfraStackS3CargolinkDocument": {
+            "id": "InfraStackS3CargolinkDocument",
+            "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "accessControl": "BucketOwnerFullControl",
+                    "bucketName": "cargolink-documents"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                  "version": "1.106.1"
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument/Notifications",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.106.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-s3.Bucket",
+              "version": "1.106.1"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "InfraStackS3CargolinkDocument/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "InfraStackS3CargolinkDocument/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.106.1"
