@@ -26,6 +26,11 @@ export class DynamoDBStack extends cdk.Stack {
             // sortKey: { name: 'password', type: dynamodb.AttributeType.STRING }
         });
 
+        const userResetPass = new dynamodb.Table(this, 'CglUserResetPassTable', {
+            tableName: 'cgl_user_reset_pass',
+            partitionKey: { name: 'id', type: dynamodb.AttributeType.NUMBER },
+        });
+
         new dynamodb.Table(this, 'CGLAttachCode', {
             tableName: "cgl_attach_code",
             partitionKey: { name: 'attach_code', type: dynamodb.AttributeType.STRING },
