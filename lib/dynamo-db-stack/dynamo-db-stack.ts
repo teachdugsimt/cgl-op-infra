@@ -39,5 +39,22 @@ export class DynamoDBStack extends cdk.Stack {
             // encryptionKey:  {password: },
         });
 
+        // Export values
+        new cdk.CfnOutput(this, "OtpTable", {
+            value: otpTable.tableName,
+        });
+
+        new cdk.CfnOutput(this, "UserTable", {
+            value: userTable.tableName,
+        });
+
+        new cdk.CfnOutput(this, "UserResetPassTable", {
+            value: userResetPass.tableName,
+        });
+
+        new cdk.CfnOutput(this, "AttachTable", {
+            value: attachTable.tableName,
+        });
+
     }
 }

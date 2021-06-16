@@ -19,11 +19,16 @@ export class PinpointStack extends cdk.Stack {
       identity: 'arn:aws:ses:ap-southeast-1:029707422715:identity/infiltech.org',
     });
 
-    const pinpointPushNotification = new pinpoint.CfnGCMChannel(this, 'CglPushNotificationService', {
-      applicationId: pinpointProject.ref,
-      apiKey: 'AIzaSyCh7_PuaAmLtesVnkdf92uVckToAE5w4S8',
-      enabled: true,
-    })
+    // const pinpointPushNotification = new pinpoint.CfnGCMChannel(this, 'CglPushNotificationService', {
+    //   applicationId: pinpointProject.ref,
+    //   apiKey: 'AIzaSyCh7_PuaAmLtesVnkdf92uVckToAE5w4S8',
+    //   enabled: true,
+    // })
+
+    // Export values
+    new cdk.CfnOutput(this, "PinpointMessaging", {
+      value: pinpointProject.ref,
+    });
 
   }
 }
