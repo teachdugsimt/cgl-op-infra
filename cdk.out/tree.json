@@ -9,7 +9,7 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "@aws-cdk/core.Construct",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackDB": {
@@ -44,7 +44,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnVPC",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "PublicSubnet1": {
@@ -88,7 +88,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "Acl": {
@@ -96,7 +96,7 @@
                         "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTable": {
@@ -118,7 +118,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTableAssociation": {
@@ -137,7 +137,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "DefaultRoute": {
@@ -157,7 +157,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "EIP": {
@@ -177,7 +177,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnEIP",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "NATGateway": {
@@ -186,14 +186,14 @@
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::NatGateway",
                           "aws:cdk:cloudformation:props": {
+                            "subnetId": {
+                              "Ref": "CGLDevDbVPCPublicSubnet1Subnet36C085FB"
+                            },
                             "allocationId": {
                               "Fn::GetAtt": [
                                 "CGLDevDbVPCPublicSubnet1EIP5F53B6B1",
                                 "AllocationId"
                               ]
-                            },
-                            "subnetId": {
-                              "Ref": "CGLDevDbVPCPublicSubnet1Subnet36C085FB"
                             },
                             "tags": [
                               {
@@ -205,13 +205,13 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnNatGateway",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.PublicSubnet",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "PublicSubnet2": {
@@ -255,7 +255,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "Acl": {
@@ -263,7 +263,7 @@
                         "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTable": {
@@ -285,7 +285,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTableAssociation": {
@@ -304,7 +304,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "DefaultRoute": {
@@ -324,13 +324,13 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.PublicSubnet",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "PrivateSubnet1": {
@@ -374,7 +374,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "Acl": {
@@ -382,7 +382,7 @@
                         "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTable": {
@@ -404,7 +404,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTableAssociation": {
@@ -423,7 +423,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "DefaultRoute": {
@@ -443,13 +443,13 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.PrivateSubnet",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "PrivateSubnet2": {
@@ -493,7 +493,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "Acl": {
@@ -501,7 +501,7 @@
                         "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTable": {
@@ -523,7 +523,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "RouteTableAssociation": {
@@ -542,7 +542,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "DefaultRoute": {
@@ -562,13 +562,13 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.PrivateSubnet",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "IGW": {
@@ -587,7 +587,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnInternetGateway",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "VPCGW": {
@@ -606,13 +606,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnVPCGatewayAttachment",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.Vpc",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "CDKMetadata": {
@@ -624,13 +624,13 @@
                     "path": "InfraStackDB/CglVpcResources/CDKMetadata/Default",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnResource",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": {
@@ -638,7 +638,7 @@
                 "path": "InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": {
@@ -646,7 +646,7 @@
                 "path": "InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": {
@@ -654,13 +654,13 @@
                 "path": "InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.NestedStack",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CglVpcResources.NestedStack": {
@@ -683,7 +683,7 @@
                           },
                           "/",
                           {
-                            "Ref": "AssetParameters48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570S3BucketF80255D7"
+                            "Ref": "AssetParameters13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5eS3Bucket8366F073"
                           },
                           "/",
                           {
@@ -693,7 +693,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570S3VersionKey78E099B6"
+                                    "Ref": "AssetParameters13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5eS3VersionKey87DAED00"
                                   }
                                 ]
                               }
@@ -706,7 +706,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570S3VersionKey78E099B6"
+                                    "Ref": "AssetParameters13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5eS3VersionKey87DAED00"
                                   }
                                 ]
                               }
@@ -719,13 +719,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnStack",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CglRdsResources": {
@@ -759,13 +759,13 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-rds.CfnDBSubnetGroup",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-rds.SubnetGroup",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "SecurityGroup": {
@@ -802,13 +802,13 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-ec2.CfnSecurityGroup",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.SecurityGroup",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "Secret": {
@@ -843,7 +843,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-secretsmanager.CfnSecret",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       },
                       "Attachment": {
@@ -867,19 +867,19 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-secretsmanager.CfnSecretTargetAttachment",
-                              "version": "1.108.0"
+                              "version": "1.109.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-secretsmanager.SecretTargetAttachment",
-                          "version": "1.108.0"
+                          "version": "1.109.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-rds.DatabaseSecret",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "Resource": {
@@ -925,13 +925,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-rds.CfnDBInstance",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-rds.DatabaseInstance",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "CDKMetadata": {
@@ -943,13 +943,13 @@
                     "path": "InfraStackDB/CglRdsResources/CDKMetadata/Default",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnResource",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": {
@@ -957,7 +957,7 @@
                 "path": "InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnParameter",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": {
@@ -965,7 +965,7 @@
                 "path": "InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnParameter",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": {
@@ -973,13 +973,13 @@
                 "path": "InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnParameter",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.NestedStack",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CglRdsResources.NestedStack": {
@@ -1002,7 +1002,7 @@
                           },
                           "/",
                           {
-                            "Ref": "AssetParametersf53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4S3Bucket2A3732C0"
+                            "Ref": "AssetParameters15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5dS3Bucket5175A45F"
                           },
                           "/",
                           {
@@ -1012,7 +1012,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParametersf53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4S3VersionKey5A295864"
+                                    "Ref": "AssetParameters15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5dS3VersionKey85A82D52"
                                   }
                                 ]
                               }
@@ -1025,7 +1025,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParametersf53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4S3VersionKey5A295864"
+                                    "Ref": "AssetParameters15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5dS3VersionKey85A82D52"
                                   }
                                 ]
                               }
@@ -1058,13 +1058,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnStack",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1076,97 +1076,97 @@
                 "path": "InfraStackDB/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "AssetParameters": {
             "id": "AssetParameters",
             "path": "InfraStackDB/AssetParameters",
             "children": {
-              "48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570": {
-                "id": "48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570",
-                "path": "InfraStackDB/AssetParameters/48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570",
+              "13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e": {
+                "id": "13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e",
+                "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "InfraStackDB/AssetParameters/48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570/S3Bucket",
+                    "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "InfraStackDB/AssetParameters/48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570/S3VersionKey",
+                    "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "InfraStackDB/AssetParameters/48a2aed96c389dfa45922113200f2d6c1854fe772f42731215f6c1e3a431f570/ArtifactHash",
+                    "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
-              "f53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4": {
-                "id": "f53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4",
-                "path": "InfraStackDB/AssetParameters/f53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4",
+              "15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5d": {
+                "id": "15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5d",
+                "path": "InfraStackDB/AssetParameters/15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5d",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "InfraStackDB/AssetParameters/f53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4/S3Bucket",
+                    "path": "InfraStackDB/AssetParameters/15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5d/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "InfraStackDB/AssetParameters/f53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4/S3VersionKey",
+                    "path": "InfraStackDB/AssetParameters/15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5d/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "InfraStackDB/AssetParameters/f53679c41b085cbe58532ebfe42b7d461e0b3f7b45096a231e3c33d459c635a4/ArtifactHash",
+                    "path": "InfraStackDB/AssetParameters/15c383df026b9c7743fb9a643d2ea3e20431826ed832514763107f706ef2ef5d/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackSecretsHashKey": {
@@ -1190,13 +1190,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-secretsmanager.CfnSecret",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-secretsmanager.Secret",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1208,19 +1208,19 @@
                 "path": "InfraStackSecretsHashKey/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackCognito": {
@@ -1277,13 +1277,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "Resource": {
@@ -1351,7 +1351,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-cognito.CfnUserPool",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "CglUserAppClient": {
@@ -1416,19 +1416,19 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-cognito.CfnUserPoolClient",
-                      "version": "1.108.0"
+                      "version": "1.109.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-cognito.UserPoolClient",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-cognito.UserPool",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1440,19 +1440,19 @@
                 "path": "InfraStackCognito/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackDynamoDB": {
@@ -1490,7 +1490,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "ScalingRole": {
@@ -1498,13 +1498,13 @@
                 "path": "InfraStackDynamoDB/CglOtpTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CglUserTable": {
@@ -1538,7 +1538,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "ScalingRole": {
@@ -1546,13 +1546,13 @@
                 "path": "InfraStackDynamoDB/CglUserTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CGLAttachCode": {
@@ -1594,7 +1594,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "ScalingRole": {
@@ -1602,13 +1602,13 @@
                 "path": "InfraStackDynamoDB/CGLAttachCode/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1620,19 +1620,19 @@
                 "path": "InfraStackDynamoDB/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackS3CargolinkDocument": {
@@ -1655,7 +1655,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3.CfnBucket",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               },
               "Notifications": {
@@ -1663,13 +1663,13 @@
                 "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument/Notifications",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-s3.Bucket",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1681,19 +1681,19 @@
                 "path": "InfraStackS3CargolinkDocument/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackPinPoint": {
@@ -1711,7 +1711,7 @@
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-pinpoint.CfnApp",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CglSmsService": {
@@ -1727,7 +1727,7 @@
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-pinpoint.CfnSMSChannel",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1739,19 +1739,19 @@
                 "path": "InfraStackPinPoint/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
         }
       },
       "InfraStackKms": {
@@ -1801,13 +1801,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-kms.CfnKey",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-kms.Key",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           },
           "CDKMetadata": {
@@ -1819,25 +1819,198 @@
                 "path": "InfraStackKms/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.108.0"
+                  "version": "1.109.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.108.0"
+              "version": "1.109.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.108.0"
+          "version": "1.109.0"
+        }
+      },
+      "InfraCloudFront": {
+        "id": "InfraCloudFront",
+        "path": "InfraCloudFront",
+        "children": {
+          "CglCachePolicy": {
+            "id": "CglCachePolicy",
+            "path": "InfraCloudFront/CglCachePolicy",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraCloudFront/CglCachePolicy/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFront::CachePolicy",
+                  "aws:cdk:cloudformation:props": {
+                    "cachePolicyConfig": {
+                      "name": "allow-cors-to-authoization",
+                      "comment": "whitelist-headers",
+                      "minTtl": 1,
+                      "maxTtl": 31536000,
+                      "defaultTtl": 86400,
+                      "parametersInCacheKeyAndForwardedToOrigin": {
+                        "cookiesConfig": {
+                          "cookieBehavior": "none"
+                        },
+                        "headersConfig": {
+                          "headerBehavior": "whitelist",
+                          "headers": [
+                            "Authorization",
+                            "Origin",
+                            "Access-Control-Request-Method",
+                            "Access-Control-Request-Headers"
+                          ]
+                        },
+                        "enableAcceptEncodingGzip": true,
+                        "enableAcceptEncodingBrotli": true,
+                        "queryStringsConfig": {
+                          "queryStringBehavior": "none"
+                        }
+                      }
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cloudfront.CfnCachePolicy",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-cloudfront.CachePolicy",
+              "version": "1.109.0"
+            }
+          },
+          "ImportBucket": {
+            "id": "ImportBucket",
+            "path": "InfraCloudFront/ImportBucket",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Resource",
+              "version": "1.109.0"
+            }
+          },
+          "CglCloudFront": {
+            "id": "CglCloudFront",
+            "path": "InfraCloudFront/CglCloudFront",
+            "children": {
+              "Origin1": {
+                "id": "Origin1",
+                "path": "InfraCloudFront/CglCloudFront/Origin1",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.109.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraCloudFront/CglCloudFront/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFront::Distribution",
+                  "aws:cdk:cloudformation:props": {
+                    "distributionConfig": {
+                      "enabled": true,
+                      "origins": [
+                        {
+                          "domainName": "2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com",
+                          "id": "InfraCloudFrontCglCloudFrontOrigin14E48CA2A",
+                          "originPath": "/prod",
+                          "customOriginConfig": {
+                            "originSslProtocols": [
+                              "TLSv1.2"
+                            ],
+                            "originProtocolPolicy": "https-only"
+                          }
+                        }
+                      ],
+                      "defaultCacheBehavior": {
+                        "pathPattern": "*",
+                        "targetOriginId": "InfraCloudFrontCglCloudFrontOrigin14E48CA2A",
+                        "allowedMethods": [
+                          "GET",
+                          "HEAD",
+                          "OPTIONS",
+                          "PUT",
+                          "POST",
+                          "PATCH",
+                          "DELETE"
+                        ],
+                        "cachedMethods": [
+                          "GET",
+                          "HEAD",
+                          "OPTIONS"
+                        ],
+                        "cachePolicyId": {
+                          "Ref": "CglCachePolicyBE54335B"
+                        },
+                        "compress": true,
+                        "viewerProtocolPolicy": "redirect-to-https"
+                      },
+                      "comment": "cargolink-cloudfront",
+                      "httpVersion": "http2",
+                      "ipv6Enabled": true,
+                      "logging": {
+                        "bucket": {
+                          "Fn::Join": [
+                            "",
+                            [
+                              "cloudfron-log.s3.ap-southeast-1.",
+                              {
+                                "Ref": "AWS::URLSuffix"
+                              }
+                            ]
+                          ]
+                        },
+                        "prefix": "cgl-cloudfront"
+                      },
+                      "priceClass": "PriceClass_All"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cloudfront.CfnDistribution",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-cloudfront.Distribution",
+              "version": "1.109.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "InfraCloudFront/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "InfraCloudFront/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.109.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.109.0"
         }
       }
     },
     "constructInfo": {
       "fqn": "@aws-cdk/core.App",
-      "version": "1.108.0"
+      "version": "1.109.0"
     }
   }
 }
