@@ -1,10 +1,6 @@
 import * as cdk from '@aws-cdk/core'
-
-
-import * as elbv2 from '@aws-cdk/aws-elasticloadbalancingv2';
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
 import *  as origins from '@aws-cdk/aws-cloudfront-origins'
-import *  as  lambda from "@aws-cdk/aws-lambda"
 import * as  s3 from '@aws-cdk/aws-s3'
 
 export class CloudFrontStack extends cdk.Stack {
