@@ -20,4 +20,4 @@ new DynamoDBStack(app, 'InfraStackDynamoDB', { env: envSgp });
 new CargolinkDocumentStack(app, 'InfraStackS3CargolinkDocument', { env: envSgp });
 new PinpointStack(app, 'InfraStackPinPoint', { env: envSgp });
 new KmsStack(app, 'InfraStackKms', { env: envSgp });
-new CloudFrontStack(app, 'InfraCloudFront', { env: envSgp });
+new CloudFrontStack(app, 'InfraCloudFrontTest', { env: envSgp });

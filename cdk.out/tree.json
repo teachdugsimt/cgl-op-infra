@@ -1864,13 +1864,15 @@
                             "Authorization",
                             "Origin",
                             "Access-Control-Request-Method",
-                            "Access-Control-Request-Headers"
+                            "Access-Control-Request-Headers",
+                            "Accept-Language",
+                            "Content-Type"
                           ]
                         },
                         "enableAcceptEncodingGzip": true,
                         "enableAcceptEncodingBrotli": true,
                         "queryStringsConfig": {
-                          "queryStringBehavior": "none"
+                          "queryStringBehavior": "all"
                         }
                       }
                     }
@@ -1920,31 +1922,19 @@
                           "domainName": "2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com",
                           "id": "InfraCloudFrontCglCloudFrontOrigin14E48CA2A",
                           "originPath": "/prod",
+                          "connectionTimeout": 10,
                           "customOriginConfig": {
                             "originSslProtocols": [
                               "TLSv1.2"
                             ],
-                            "originProtocolPolicy": "https-only"
+                            "originProtocolPolicy": "https-only",
+                            "originReadTimeout": 40
                           }
                         }
                       ],
                       "defaultCacheBehavior": {
                         "pathPattern": "*",
                         "targetOriginId": "InfraCloudFrontCglCloudFrontOrigin14E48CA2A",
-                        "allowedMethods": [
-                          "GET",
-                          "HEAD",
-                          "OPTIONS",
-                          "PUT",
-                          "POST",
-                          "PATCH",
-                          "DELETE"
-                        ],
-                        "cachedMethods": [
-                          "GET",
-                          "HEAD",
-                          "OPTIONS"
-                        ],
                         "cachePolicyId": {
                           "Ref": "CglCachePolicyBE54335B"
                         },

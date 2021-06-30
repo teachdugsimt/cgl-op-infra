@@ -1862,7 +1862,7 @@
             "data": "CglCloudFrontBB6A502F",
             "trace": [
               "new Distribution (/Users/mac/backend-api/cgl-op-infra/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:164:26)",
-              "new CloudFrontStack (/Users/mac/backend-api/cgl-op-infra/lib/cloudfront-stack/nested-stack.ts:28:9)",
+              "new CloudFrontStack (/Users/mac/backend-api/cgl-op-infra/lib/cloudfront-stack/nested-stack.ts:29:9)",
               "Object.<anonymous> (/Users/mac/backend-api/cgl-op-infra/bin/main-stack.ts:23:1)",
               "Module._compile (node:internal/modules/cjs/loader:1108:14)",
               "Module.m._compile (/Users/mac/backend-api/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",

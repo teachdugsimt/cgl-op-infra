@@ -18,11 +18,12 @@ export class CloudFrontStack extends cdk.Stack {
             enableAcceptEncodingGzip: true,
             enableAcceptEncodingBrotli: true,
             minTtl: cdk.Duration.seconds(1),
-            maxTtl: cdk.Duration.seconds(31536000),
-            defaultTtl: cdk.Duration.seconds(86400),
+            maxTtl: cdk.Duration.seconds(1),
+            defaultTtl: cdk.Duration.seconds(1),
+            queryStringBehavior: cloudfront.CacheQueryStringBehavior.all(),
             headerBehavior: cloudfront.CacheHeaderBehavior.allowList('Authorization', 'Origin',
                 'Access-Control-Request-Method',
-                'Access-Control-Request-Headers')
+                'Access-Control-Request-Headers', 'Acceapt-Language', 'Content-Type', 'Accept')
         })
         const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
         new cloudfront.Distribution(this, 'CglCloudFront', {
@@ -37,14 +38,18 @@ export class CloudFrontStack extends cdk.Stack {
             defaultBehavior: {
                 origin: new origins.HttpOrigin(originDomain, {
                     originPath: "/prod",
-                    protocolPolicy: cloudfront.OriginProtocolPolicy.HTTPS_ONLY
+                    protocolPolicy: cloudfront.OriginProtocolPolicy.HTTPS_ONLY,
+                    readTimeout: cdk.Duration.seconds(40),
+                    connectionTimeout: cdk.Duration.seconds(10),
                 }),
                 viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
                 cachePolicy: {  //  ONly one props
                     cachePolicyId: policies.cachePolicyId
                 },
-                cachedMethods: { methods: ['GET', 'HEAD', 'OPTIONS'] },
-                allowedMethods: { methods: ['GET', 'HEAD', 'OPTIONS', 'PUT', 'POST', 'PATCH', 'DELETE'] }
+
+                cachedMethods: { methods: ['GET', 'HEAD'] },  // don't have effect with API normal request (exclude GET,HEAD)
+                allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,  // INCLUDE ALL Request method for API gateway
+                // allowedMethods: { methods: ['GET', 'HEAD'] }  // don't have effect with API normal request (exclude GET,HEAD)
             },
             priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL
         })
