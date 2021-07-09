@@ -23,7 +23,7 @@ export class CloudFrontStack extends cdk.Stack {
         })
 
         const cloudfrontBucket = new s3.Bucket(this, id, {
-            bucketName: "cgl-cloudfront-log-dev",
+            bucketName: process.env.S3_BUCKET_NAME_CLOUDFRONT || "cgl-cloudfront-log-dev",
             accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
         })
         const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
