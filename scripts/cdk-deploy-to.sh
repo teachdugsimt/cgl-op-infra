@@ -14,13 +14,21 @@ envup() {
 
 envup $1
 
-if [[ $# -ge 2 ]]; then
+aws configure list
+read -p "Are you sure? (y|N) : " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  # do dangerous stuff
+  if [[ $# -ge 2 ]]; then
     shift; shift
     npx cdk list
     npx cdk deploy --all
     exit $?
-else
+  else
     echo 1>&2 "Provide account and region as first two args."
     echo 1>&2 "Additional args are passed through to cdk deploy."
     exit 1
+  fi
+
 fi
