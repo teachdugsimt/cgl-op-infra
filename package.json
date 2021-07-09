@@ -1,9 +1,6 @@
 {
-  "name": "legacy-db",
+  "name": "cgl-op-infra",
   "version": "0.1.0",
-  "bin": {
-    "legacy-db": "bin/legacy-db.js"
-  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -34,6 +31,7 @@
     "@aws-cdk/aws-s3": "1.109.0",
     "@aws-cdk/aws-secretsmanager": "1.109.0",
     "@aws-cdk/core": "1.109.0",
+    "dotenv": "^10.0.0",
     "source-map-support": "^0.5.16"
   }
 }

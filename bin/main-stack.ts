@@ -13,11 +13,11 @@ import { CloudFrontStack } from '../lib/cloudfront-stack/nested-stack'
 const app = new cdk.App();
 
 const envSgp = { region: 'ap-southeast-1' }
-new MainStack(app, 'InfraStackDB', { env: envSgp });
-new LegacySecretsManagerStack(app, 'InfraStackSecretsHashKey', { env: envSgp });
-new CognitoStack(app, 'InfraStackCognito', { env: envSgp });
-new DynamoDBStack(app, 'InfraStackDynamoDB', { env: envSgp });
-new CargolinkDocumentStack(app, 'InfraStackS3CargolinkDocument', { env: envSgp });
-new PinpointStack(app, 'InfraStackPinPoint', { env: envSgp });
-new KmsStack(app, 'InfraStackKms', { env: envSgp });
-new CloudFrontStack(app, 'InfraCloudFrontTest', { env: envSgp });
+new MainStack(app, process.env.RDS_STACK_NAME || 'InfraStackDB', { env: envSgp });
+new LegacySecretsManagerStack(app, process.env.SECRET_MANAGER_STACK_NAME || 'InfraStackSecretsHashKey', { env: envSgp });
+new CognitoStack(app, process.env.COGNITO_STACK_NAME || 'InfraStackCognito', { env: envSgp });
+new DynamoDBStack(app, process.env.DYNAMO_STACK_NAME || 'InfraStackDynamoDB', { env: envSgp });
+new CargolinkDocumentStack(app, process.env.S3_STACK_NAME || 'InfraStackS3CargolinkDocument', { env: envSgp });
+new PinpointStack(app, process.env.PINPOINT_STACK_NAME || 'InfraStackPinPoint', { env: envSgp });
+new KmsStack(app, process.env.KMS_STACK_NAME || 'InfraStackKms', { env: envSgp });
+new CloudFrontStack(app, process.env.CLOUDFRONT_STACK_NAME || "InfraCloudFrontTest", { env: envSgp });
