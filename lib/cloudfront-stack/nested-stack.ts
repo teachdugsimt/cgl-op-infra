@@ -21,10 +21,15 @@ export class CloudFrontStack extends cdk.Stack {
                 'Access-Control-Request-Method',
                 'Access-Control-Request-Headers', 'Acceapt-Language', 'Content-Type', 'Accept')
         })
+
+        const cloudfrontBucket = new s3.Bucket(this, id, {
+            bucketName: "cgl-cloudfront-log-dev",
+            accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
+        })
         const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
         new cloudfront.Distribution(this, 'CglCloudFront', {
             comment: "cargolink-cloudfront",
-            logBucket: s3.Bucket.fromBucketArn(this, "ImportBucket", "arn:aws:s3:::cloudfron-log"),
+            logBucket: cloudfrontBucket,
             logFilePrefix: "cgl-cloudfront",
             enableLogging: true,
             enabled: true,
