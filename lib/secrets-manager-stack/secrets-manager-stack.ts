@@ -16,6 +16,5 @@ export class LegacySecretsManagerStack extends cdk.Stack {
       //   generateStringKey: 'hashing-key'
       // }
     });
-
   }
 }

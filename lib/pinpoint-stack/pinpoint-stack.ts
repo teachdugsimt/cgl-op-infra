@@ -19,5 +19,9 @@ export class PinpointStack extends cdk.Stack {
     //   identity: '',
     // })
 
+    new cdk.CfnOutput(this, "CglPinpointProjectID", {
+      value: pinpointProject.ref,
+      exportName: "PinPointStack:CglPinpointProjectID"
+    });
   }
 }

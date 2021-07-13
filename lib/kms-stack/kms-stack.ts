@@ -9,5 +9,9 @@ export class KmsStack extends cdk.Stack {
       pendingWindow: cdk.Duration.days(30)
     });
 
+    new cdk.CfnOutput(this, "CglUserKeyARN", {
+      value: key.keyArn,
+      exportName: "KmsStack:CglUserKeyARN"
+    });
   }
 }

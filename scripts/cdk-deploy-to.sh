@@ -23,7 +23,7 @@ then
   if [[ $# -ge 2 ]]; then
     shift; shift
     npx cdk list
-    npx cdk deploy --all
+    npx cdk deploy --all --outputs-file ./cdk-output.json
     exit $?
   else
     echo 1>&2 "Provide account and region as first two args."

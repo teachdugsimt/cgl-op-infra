@@ -31,6 +31,7 @@
     "@aws-cdk/aws-s3": "1.109.0",
     "@aws-cdk/aws-secretsmanager": "1.109.0",
     "@aws-cdk/core": "1.109.0",
+    "aws-sdk": "^2.942.0",
     "dotenv": "^10.0.0",
     "source-map-support": "^0.5.16"
   }
