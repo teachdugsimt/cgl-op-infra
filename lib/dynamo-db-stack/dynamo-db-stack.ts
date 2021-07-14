@@ -25,6 +25,11 @@ export class DynamoDBStack extends cdk.Stack {
             // sortKey: { name: 'password', type: dynamodb.AttributeType.STRING }
         });
 
+        const userResetPass = new dynamodb.Table(this, 'CglUserResetPassTable', {
+            tableName: 'cgl_user_reset_pass',
+            partitionKey: { name: 'id', type: dynamodb.AttributeType.NUMBER },
+        });
+
         const attachTable = new dynamodb.Table(this, 'CGLAttachCode', {
             tableName: "cgl_attach_code",
             partitionKey: { name: 'attach_code', type: dynamodb.AttributeType.STRING },
@@ -32,6 +37,23 @@ export class DynamoDBStack extends cdk.Stack {
             // TableEncryption.CUSTOMER_MANAGED
             // encryption: dynamodb.TableEncryption.CUSTOMER_MANAGED,
             // encryptionKey:  {password: },
+        });
+
+        // Export values
+        new cdk.CfnOutput(this, "OtpTable", {
+            value: otpTable.tableName,
+        });
+
+        new cdk.CfnOutput(this, "UserTable", {
+            value: userTable.tableName,
+        });
+
+        new cdk.CfnOutput(this, "UserResetPassTable", {
+            value: userResetPass.tableName,
+        });
+
+        new cdk.CfnOutput(this, "AttachTable", {
+            value: attachTable.tableName,
         });
 
     }
