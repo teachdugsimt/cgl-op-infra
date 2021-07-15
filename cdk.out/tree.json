@@ -1227,17 +1227,17 @@
         "id": "InfraStack-30-Cognito",
         "path": "InfraStack-30-Cognito",
         "children": {
-          "CglUserAuthentication": {
-            "id": "CglUserAuthentication",
-            "path": "InfraStack-30-Cognito/CglUserAuthentication",
+          "CglUserAuthenticationPool": {
+            "id": "CglUserAuthenticationPool",
+            "path": "InfraStack-30-Cognito/CglUserAuthenticationPool",
             "children": {
               "smsRole": {
                 "id": "smsRole",
-                "path": "InfraStack-30-Cognito/CglUserAuthentication/smsRole",
+                "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/smsRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-30-Cognito/CglUserAuthentication/smsRole/Resource",
+                    "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/smsRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -1247,7 +1247,7 @@
                               "Action": "sts:AssumeRole",
                               "Condition": {
                                 "StringEquals": {
-                                  "sts:ExternalId": "InfraStack30CognitoCglUserAuthentication37705988"
+                                  "sts:ExternalId": "InfraStack30CognitoCglUserAuthenticationPool852E345D"
                                 }
                               },
                               "Effect": "Allow",
@@ -1288,7 +1288,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-30-Cognito/CglUserAuthentication/Resource",
+                "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Cognito::UserPool",
                   "aws:cdk:cloudformation:props": {
@@ -1324,10 +1324,10 @@
                       }
                     ],
                     "smsConfiguration": {
-                      "externalId": "InfraStack30CognitoCglUserAuthentication37705988",
+                      "externalId": "InfraStack30CognitoCglUserAuthenticationPool852E345D",
                       "snsCallerArn": {
                         "Fn::GetAtt": [
-                          "CglUserAuthenticationsmsRoleB46F2232",
+                          "CglUserAuthenticationPoolsmsRole07ECB3DA",
                           "Arn"
                         ]
                       }
@@ -1340,7 +1340,7 @@
                     "usernameConfiguration": {
                       "caseSensitive": true
                     },
-                    "userPoolName": "CglUserAuthentication",
+                    "userPoolName": "CGLUserAuthentication",
                     "verificationMessageTemplate": {
                       "defaultEmailOption": "CONFIRM_WITH_CODE",
                       "emailMessage": "The verification code to your new account is {####}",
@@ -1356,16 +1356,16 @@
               },
               "CglUserAppClient": {
                 "id": "CglUserAppClient",
-                "path": "InfraStack-30-Cognito/CglUserAuthentication/CglUserAppClient",
+                "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/CglUserAppClient",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-30-Cognito/CglUserAuthentication/CglUserAppClient/Resource",
+                    "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/CglUserAppClient/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolClient",
                       "aws:cdk:cloudformation:props": {
                         "userPoolId": {
-                          "Ref": "CglUserAuthenticationAF773911"
+                          "Ref": "CglUserAuthenticationPool2B3DC35F"
                         },
                         "accessTokenValidity": 60,
                         "allowedOAuthFlows": [
@@ -1571,6 +1571,54 @@
               "version": "1.109.0"
             }
           },
+          "CglUserResetPassTable": {
+            "id": "CglUserResetPassTable",
+            "path": "InfraStack-40-DynamoDB/CglUserResetPassTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraStack-40-DynamoDB/CglUserResetPassTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "keySchema": [
+                      {
+                        "attributeName": "id",
+                        "keyType": "HASH"
+                      }
+                    ],
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "id",
+                        "attributeType": "N"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "cgl_user_reset_pass"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
+                  "version": "1.109.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "InfraStack-40-DynamoDB/CglUserResetPassTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-dynamodb.Table",
+              "version": "1.109.0"
+            }
+          },
           "CGLAttachCode": {
             "id": "CGLAttachCode",
             "path": "InfraStack-40-DynamoDB/CGLAttachCode",
@@ -1624,6 +1672,38 @@
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
+              "version": "1.109.0"
+            }
+          },
+          "OtpTable": {
+            "id": "OtpTable",
+            "path": "InfraStack-40-DynamoDB/OtpTable",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.109.0"
+            }
+          },
+          "UserTable": {
+            "id": "UserTable",
+            "path": "InfraStack-40-DynamoDB/UserTable",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.109.0"
+            }
+          },
+          "UserResetPassTable": {
+            "id": "UserResetPassTable",
+            "path": "InfraStack-40-DynamoDB/UserResetPassTable",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.109.0"
+            }
+          },
+          "AttachTable": {
+            "id": "AttachTable",
+            "path": "InfraStack-40-DynamoDB/AttachTable",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
             }
           },
@@ -1746,6 +1826,24 @@
               "version": "1.109.0"
             }
           },
+          "CglEmailService": {
+            "id": "CglEmailService",
+            "path": "InfraStack-60-PinPoint/CglEmailService",
+            "attributes": {
+              "aws:cdk:cloudformation:type": "AWS::Pinpoint::EmailChannel",
+              "aws:cdk:cloudformation:props": {
+                "applicationId": {
+                  "Ref": "CglMessagingService"
+                },
+                "fromAddress": "info@infiltech.org",
+                "identity": "arn:aws:ses:ap-southeast-1:329729442144:identity/infiltech.org"
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-pinpoint.CfnEmailChannel",
+              "version": "1.109.0"
+            }
+          },
           "CglPinpointProjectID": {
             "id": "CglPinpointProjectID",
             "path": "InfraStack-60-PinPoint/CglPinpointProjectID",
@@ -1782,13 +1880,13 @@
         "id": "InfraStack-70-Kms",
         "path": "InfraStack-70-Kms",
         "children": {
-          "cgl_user_key": {
-            "id": "cgl_user_key",
-            "path": "InfraStack-70-Kms/cgl_user_key",
+          "CglUserKey": {
+            "id": "CglUserKey",
+            "path": "InfraStack-70-Kms/CglUserKey",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-70-Kms/cgl_user_key/Resource",
+                "path": "InfraStack-70-Kms/CglUserKey/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::KMS::Key",
                   "aws:cdk:cloudformation:props": {
@@ -1825,6 +1923,36 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-kms.CfnKey",
+                  "version": "1.109.0"
+                }
+              },
+              "Alias": {
+                "id": "Alias",
+                "path": "InfraStack-70-Kms/CglUserKey/Alias",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "InfraStack-70-Kms/CglUserKey/Alias/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::KMS::Alias",
+                      "aws:cdk:cloudformation:props": {
+                        "aliasName": "alias/cgl_user_key",
+                        "targetKeyId": {
+                          "Fn::GetAtt": [
+                            "CglUserKey8ADD2F2E",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-kms.CfnAlias",
+                      "version": "1.109.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-kms.Alias",
                   "version": "1.109.0"
                 }
               }
@@ -1977,7 +2105,7 @@
                       "enabled": true,
                       "origins": [
                         {
-                          "domainName": "m49n9z306b.execute-api.ap-southeast-1.amazonaws.com",
+                          "domainName": "5rfalqfx84.execute-api.ap-southeast-1.amazonaws.com",
                           "id": "InfraStack90CloudFrontCglCloudFrontOrigin1231FB87E",
                           "originPath": "/prod",
                           "connectionTimeout": 10,

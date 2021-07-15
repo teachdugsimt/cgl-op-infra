@@ -8,7 +8,7 @@ export class CognitoStack extends cdk.Stack {
 
         // cognito
         const userPool = new cognito.UserPool(this, 'CglUserAuthenticationPool', {
-            userPoolName: 'CGL-User-Authentication',
+            userPoolName: 'CGLUserAuthentication',
             selfSignUpEnabled: true,
             signInCaseSensitive: true,
             signInAliases: {

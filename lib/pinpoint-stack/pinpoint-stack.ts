@@ -16,7 +16,7 @@ export class PinpointStack extends cdk.Stack {
     const pinpointProjectEmail = new pinpoint.CfnEmailChannel(this, 'CglEmailService', {
       applicationId: pinpointProject.ref,
       fromAddress: 'info@infiltech.org',
-      identity: 'arn:aws:ses:ap-southeast-1:029707422715:identity/infiltech.org',
+      identity: `arn:aws:ses:ap-southeast-1:${process.env.AWS_ACCOUNT}:identity/infiltech.org`,
     });
 
     // const pinpointPushNotification = new pinpoint.CfnGCMChannel(this, 'CglPushNotificationService', {
