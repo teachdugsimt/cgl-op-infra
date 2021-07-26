@@ -3,7 +3,7 @@ import * as cloudfront from '@aws-cdk/aws-cloudfront';
 import *  as origins from '@aws-cdk/aws-cloudfront-origins'
 import * as  s3 from '@aws-cdk/aws-s3'
 import { URL } from 'url';
-
+import * as acm from '@aws-cdk/aws-certificatemanager'
 
 interface CloudfrontStackProps extends cdk.StackProps {
     apigwUrl: string
@@ -12,6 +12,12 @@ export class CloudFrontStack extends cdk.Stack {
 
     constructor(scope: cdk.Construct, id: string, props: CloudfrontStackProps) {
         super(scope, id, props)
+
+        // const domain_name = process.env.CERTIFICATE_DOMAIN || 'stg.api.onelinky.co.th'
+        // const cert = new acm.Certificate(this, 'Certificate', {
+        //     domainName: domain_name,
+        //     validation: acm.CertificateValidation.fromDns(),
+        // });
 
         const policies = new cloudfront.CachePolicy(this, "CglCachePolicy", {
             cachePolicyName: 'allow-cors-to-authoization',
@@ -35,6 +41,8 @@ export class CloudFrontStack extends cdk.Stack {
         // const importedApiGwUrl = cdk.Fn.importValue('ApiGatewayStack:APIGwCglOpAPIUrl');
 
         new cloudfront.Distribution(this, 'CglCloudFront', {
+            // domainNames: [domain_name],
+            // certificate: acm.Certificate.fromCertificateArn(this, 'cgl-certificate', cert.certificateArn),
             comment: "cargolink-cloudfront",
             logBucket: cloudfrontBucket,
             logFilePrefix: "cgl-cloudfront",
