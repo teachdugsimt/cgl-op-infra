@@ -2,6 +2,8 @@ import * as cdk from '@aws-cdk/core'
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
 import *  as origins from '@aws-cdk/aws-cloudfront-origins'
 import * as  s3 from '@aws-cdk/aws-s3'
+import * as certificate from '@aws-cdk/aws-certificatemanager'
+import * as route53 from '@aws-cdk/aws-route53';
 
 export class CloudFrontStack extends cdk.Stack {
 
@@ -26,10 +28,16 @@ export class CloudFrontStack extends cdk.Stack {
             bucketName: process.env.S3_BUCKET_NAME_CLOUDFRONT || "cgl-cloudfront-log-dev",
             accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
         })
+
         const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
         new cloudfront.Distribution(this, 'CglCloudFront', {
+            // domainNames: ["dev.api.cargolink.co.th"],
+            // certificate: certificate.Certificate.fromCertificateArn(this,
+            //     'cgl-dev-certificate',
+            //     'arn:aws:acm:us-east-1:029707422715:certificate/4a3367b7-5635-4a3b-9538-a21208fb3d44'),
             comment: "cargolink-cloudfront",
             logBucket: cloudfrontBucket,
+            // logBucket: s3.Bucket.fromBucketArn(this, id, 'arn:aws:s3:::cgl-cloudfront-log-dev'),
             logFilePrefix: "cgl-cloudfront",
             enableLogging: true,
             enabled: true,
@@ -50,7 +58,6 @@ export class CloudFrontStack extends cdk.Stack {
 
                 cachedMethods: { methods: ['GET', 'HEAD'] },  // don't have effect with API normal request (exclude GET,HEAD)
                 allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,  // INCLUDE ALL Request method for API gateway
-                // allowedMethods: { methods: ['GET', 'HEAD'] }  // don't have effect with API normal request (exclude GET,HEAD)
             },
             priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL
         })

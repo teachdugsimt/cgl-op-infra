@@ -8,7 +8,7 @@ import { DynamoDBStack } from '../lib/dynamo-db-stack/dynamo-db-stack';
 import { CargolinkDocumentStack } from '../lib/s3-cargolink-document-stack/cargolink-document-stack';
 import { PinpointStack } from "../lib/pinpoint-stack/pinpoint-stack";
 import { KmsStack } from "../lib/kms-stack/kms-stack";
-import { CloudFrontStack } from '../lib/cloudfront-stack/nested-stack'
+import { CloudFrontStack } from '../lib/cloudfront-stack/cloudfront-stack'
 
 const app = new cdk.App();
 
@@ -20,4 +20,4 @@ new DynamoDBStack(app, process.env.DYNAMO_STACK_NAME || 'InfraStackDynamoDB', { 
 new CargolinkDocumentStack(app, process.env.S3_STACK_NAME || 'InfraStackS3CargolinkDocument', { env: envSgp });
 new PinpointStack(app, process.env.PINPOINT_STACK_NAME || 'InfraStackPinPoint', { env: envSgp });
 new KmsStack(app, process.env.KMS_STACK_NAME || 'InfraStackKms', { env: envSgp });
-new CloudFrontStack(app, process.env.CLOUDFRONT_STACK_NAME || "InfraCloudFrontTest", { env: envSgp });
+new CloudFrontStack(app, process.env.CLOUDFRONT_STACK_NAME || "InfraCloudFront", { env: envSgp });
