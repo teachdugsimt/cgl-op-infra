@@ -4,10 +4,15 @@ import *  as origins from '@aws-cdk/aws-cloudfront-origins'
 import * as  s3 from '@aws-cdk/aws-s3'
 import * as certificate from '@aws-cdk/aws-certificatemanager'
 import * as route53 from '@aws-cdk/aws-route53';
+import { URL } from 'url';
 
+
+interface CloudfrontStackProps extends cdk.StackProps {
+    apigwUrl: string
+}
 export class CloudFrontStack extends cdk.Stack {
 
-    constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+    constructor(scope: cdk.Construct, id: string, props: CloudfrontStackProps) {
         super(scope, id, props)
 
         const policies = new cloudfront.CachePolicy(this, "CglCachePolicy", {
@@ -29,7 +34,8 @@ export class CloudFrontStack extends cdk.Stack {
             accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
         })
 
-        const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
+        // const importedApiGwUrl = cdk.Fn.importValue('ApiGatewayStack:APIGwCglOpAPIUrl');
+
         new cloudfront.Distribution(this, 'CglCloudFront', {
             // domainNames: ["dev.api.cargolink.co.th"],
             // certificate: certificate.Certificate.fromCertificateArn(this,
@@ -45,8 +51,8 @@ export class CloudFrontStack extends cdk.Stack {
             httpVersion: cloudfront.HttpVersion.HTTP2,
             minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2018,
             defaultBehavior: {
-                origin: new origins.HttpOrigin(originDomain, {
-                    originPath: "/prod",
+                origin: new origins.HttpOrigin(props.apigwUrl.split('/')[0], {
+                    originPath: '/' + props.apigwUrl.split('/')[1],
                     protocolPolicy: cloudfront.OriginProtocolPolicy.HTTPS_ONLY,
                     readTimeout: cdk.Duration.seconds(40),
                     connectionTimeout: cdk.Duration.seconds(10),

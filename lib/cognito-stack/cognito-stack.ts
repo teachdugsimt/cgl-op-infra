@@ -1,13 +1,14 @@
 import * as cognito from "@aws-cdk/aws-cognito";
 import * as cdk from '@aws-cdk/core';
+// import * as secretsManager from "@aws-cdk/aws-secretsmanager";
 export class CognitoStack extends cdk.Stack {
 
     constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
 
         // cognito
-        const userPool = new cognito.UserPool(this, 'CglUserAuthentication', {
-            userPoolName: 'CglUserAuthentication',
+        const userPool = new cognito.UserPool(this, 'CglUserAuthenticationPool', {
+            userPoolName: 'CGLUserAuthentication',
             selfSignUpEnabled: true,
             signInCaseSensitive: true,
             signInAliases: {
@@ -53,8 +54,14 @@ export class CognitoStack extends cdk.Stack {
             readAttributes: clientReadAttributes,
         });
 
-        const clientId = client.userPoolClientId;
-        const userPoolId = userPool.userPoolId;
+        new cdk.CfnOutput(this, "UserPoolId", {
+            value: userPool.userPoolId,
+            exportName: "CognitoStack:UserPoolId"
+        });
 
+        new cdk.CfnOutput(this, "UserPoolClientId", {
+            value: client.userPoolClientId,
+            exportName: "CognitoStack:UserPoolClientId"
+        });
     }
 }

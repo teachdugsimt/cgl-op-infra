@@ -1,0 +1,31 @@
+Start Load ENV .env.staging
+=============
+      Name                    Value             Type    Location
+      ----                    -----             ----    --------
+   profile                  cgl-stg           manual    --profile
+access_key     ****************YMH2 shared-credentials-file    
+secret_key     ****************T0fC shared-credentials-file    
+    region           ap-southeast-1      config-file    ~/.aws/config
+
+GW URL ${Token[TOKEN.264]}
+URL string
+InfraStack-10-DB
+InfraStack-20-SecretsHashKey
+InfraStack-30-Cognito
+InfraStack-40-DynamoDB
+InfraStack-50-S3CargolinkDocument
+InfraStack-60-PinPoint
+InfraStack-70-Kms
+InfraStack-80-ApiGateway
+InfraStack-90-CloudFront
+GW URL ${Token[TOKEN.269]}
+URL string
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-10-DB/d578d2a0-e0c0-11eb-a05d-063c5f980302
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-20-SecretsHashKey/5be5dbc0-e0c2-11eb-b50a-02ab63576a78
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-30-Cognito/6cc3a350-e0c2-11eb-ad0b-02cc99f96210
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-40-DynamoDB/85e0c6b0-e0c2-11eb-aa7e-0acc748f3826
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-50-S3CargolinkDocument/a1f46dc0-e0c2-11eb-8171-06f1487f6a64
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-60-PinPoint/b7e111b0-e0c2-11eb-bf03-02227c3df95e
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-70-Kms/3da22590-e0d3-11eb-af05-0ad54029fc4e
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-80-ApiGateway/62715e80-e0ed-11eb-83d4-0a276ca6f304
+arn:aws:cloudformation:ap-southeast-1:329729442144:stack/InfraStack-90-CloudFront/696f15c0-e0f1-11eb-aa7e-0acc748f3826

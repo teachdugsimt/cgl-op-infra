@@ -5,9 +5,14 @@ export class KmsStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const key = new kms.Key(this, 'cgl_user_key', {
+    const key = new kms.Key(this, 'CglUserKey', {
+      alias: 'cgl_user_key',
       pendingWindow: cdk.Duration.days(30)
     });
 
+    new cdk.CfnOutput(this, "CglUserKeyARN", {
+      value: key.keyArn,
+      exportName: "KmsStack:CglUserKeyARN"
+    });
   }
 }

@@ -1,0 +1,2216 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "InfraStack-10-DB": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-10-DB.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-10-DB": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "InfraStack10DBCglVpcResourcesDC884647.nested.template.json",
+              "id": "3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266",
+              "packaging": "file",
+              "sourceHash": "3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266",
+              "s3BucketParameter": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3Bucket792E6F29",
+              "s3KeyParameter": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3VersionKey47B01263",
+              "artifactHashParameter": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266ArtifactHashB292E62C"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "VpcStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "InfraStack10DBCglRdsResources9E9BBD1A.nested.template.json",
+              "id": "60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164",
+              "packaging": "file",
+              "sourceHash": "60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164",
+              "s3BucketParameter": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3Bucket536A2741",
+              "s3KeyParameter": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3VersionKeyC28BADF8",
+              "artifactHashParameter": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164ArtifactHashAE321122"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "RdsStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPC9EE96AAF",
+            "trace": [
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:710:21)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet1Subnet65053CDB",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PublicSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet1RouteTableE8E10504",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PublicSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet1RouteTableAssociationD03B62D6",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PublicSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet1DefaultRoute28FD547A",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1031:19)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:757:46)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet1EIPE14BC016",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:108:27)",
+              "Vpc.createNatGateways (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet1NATGateway8FF56B2A",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:108:27)",
+              "Vpc.createNatGateways (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet2SubnetED2436BE",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PublicSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet2RouteTable4EF6FCBC",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PublicSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet2RouteTableAssociationB2BFD66B",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PublicSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPublicSubnet2DefaultRouteE364E576",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1031:19)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:757:46)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet1Subnet60C46DF6",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PrivateSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet1RouteTable1CC51282",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PrivateSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet1RouteTableAssociation0FB9CC34",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PrivateSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet1DefaultRoute302A6EB7",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:125:12)",
+              "NatGatewayProvider.configureNat (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:118:12)",
+              "Vpc.createNatGateways (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet2Subnet23B70D9B",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PrivateSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet2RouteTable0CC8BE69",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PrivateSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet2RouteTableAssociation4276535B",
+            "trace": [
+              "new Subnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PrivateSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCPrivateSubnet2DefaultRouteE9BAC26D",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:125:12)",
+              "NatGatewayProvider.configureNat (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:118:12)",
+              "Vpc.createNatGateways (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCIGW6BB29B7E",
+            "trace": [
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:746:19)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CGLDbVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbVPCVPCGWF6E6FBD9",
+            "trace": [
+              "new Vpc (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:752:19)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:8:20)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref",
+            "trace": [
+              "createNestedStackOutput (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
+              "Object.resolveReferences (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref",
+            "trace": [
+              "createNestedStackOutput (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
+              "Object.resolveReferences (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources/InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef",
+            "trace": [
+              "createNestedStackOutput (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:207:14)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:86:25)",
+              "Object.resolveReferences (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglVpcResources.NestedStack/CglVpcResources.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglVpcResourcesNestedStackCglVpcResourcesNestedStackResource47ACCFFC",
+            "trace": [
+              "new NestedStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:76:21)",
+              "new VpcStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/vpc-stack.ts:7:9)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:13:28)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/CGLDbInstance/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbInstanceSubnetGroupC176E43B",
+            "trace": [
+              "new SubnetGroup (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/subnet-group.ts:48:25)",
+              "new DatabaseInstanceNew (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:354:46)",
+              "new DatabaseInstanceSource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:505:5)",
+              "new DatabaseInstance (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:618:5)",
+              "new RdsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/CGLDbInstance/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbInstanceSecurityGroup8CD40099",
+            "trace": [
+              "new SecurityGroup (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:26)",
+              "new DatabaseInstanceNew (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:361:53)",
+              "new DatabaseInstanceSource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:505:5)",
+              "new DatabaseInstance (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:618:5)",
+              "new RdsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/CGLDbInstance/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InfraStack10DBCglRdsResourcesCGLDbInstanceSecret3ECE65303fdaad7efa858a3daf9490cf0a702aeb",
+            "trace": [
+              "new Secret (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:325:22)",
+              "new DatabaseSecret (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:34:5)",
+              "Object.renderCredentials (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
+              "new DatabaseInstance (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:620:25)",
+              "new RdsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/CGLDbInstance/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbInstanceSecretAttachment4D9C8396",
+            "trace": [
+              "new SecretTargetAttachment (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:473:24)",
+              "DatabaseSecret.attach (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:208:12)",
+              "new DatabaseInstance (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:643:28)",
+              "new RdsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/CGLDbInstance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLDbInstanceE149BCD9",
+            "trace": [
+              "new DatabaseInstance (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-rds/lib/instance.ts:623:22)",
+              "new RdsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/rds-stack.ts:18:22)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref",
+            "trace": [
+              "createNestedStackParameter (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:87:12)",
+              "Object.resolveReferences (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref",
+            "trace": [
+              "createNestedStackParameter (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:87:12)",
+              "Object.resolveReferences (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources/reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef",
+            "trace": [
+              "createNestedStackParameter (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:186:13)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:68:12)",
+              "resolveValue (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:87:12)",
+              "Object.resolveReferences (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CglRdsResources.NestedStack/CglRdsResources.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglRdsResourcesNestedStackCglRdsResourcesNestedStackResourceDBFAF75B",
+            "trace": [
+              "new NestedStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:76:21)",
+              "new RdsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/rds-stack.ts:12:5)",
+              "new MainStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/db-stack/nested-stack.ts:16:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:20:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3Bucket792E6F29",
+            "trace": [
+              "new FileAssetParameters (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "VpcStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3VersionKey47B01263",
+            "trace": [
+              "new FileAssetParameters (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "VpcStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266ArtifactHashB292E62C",
+            "trace": [
+              "new FileAssetParameters (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "VpcStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3Bucket536A2741",
+            "trace": [
+              "new FileAssetParameters (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "RdsStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3VersionKeyC28BADF8",
+            "trace": [
+              "new FileAssetParameters (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "RdsStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164ArtifactHashAE321122",
+            "trace": [
+              "new FileAssetParameters (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "MainStack.addFileAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stack.ts:350:29)",
+              "RdsStack._prepareTemplateAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/nested-stack.ts:132:48)",
+              "defineNestedStackAsset (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-10-DB"
+    },
+    "InfraStack-20-SecretsHashKey": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-20-SecretsHashKey.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-20-SecretsHashKey/DynamoDBSecret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBSecret997CCAAF",
+            "trace": [
+              "new Secret (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:325:22)",
+              "new LegacySecretsManagerStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/secrets-manager-stack/secrets-manager-stack.ts:11:5)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:21:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-20-SecretsHashKey/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-20-SecretsHashKey"
+    },
+    "InfraStack-30-Cognito": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-30-Cognito.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-30-Cognito/CglUserAuthenticationPool/smsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserAuthenticationPoolsmsRole07ECB3DA",
+            "trace": [
+              "new Role (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-iam/lib/role.ts:192:18)",
+              "UserPool.smsConfiguration (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:600:38)",
+              "new UserPool (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:439:30)",
+              "new CognitoStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:10:26)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:22:23)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-30-Cognito/CglUserAuthenticationPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserAuthenticationPool2B3DC35F",
+            "trace": [
+              "new UserPool (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:432:22)",
+              "new CognitoStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:10:26)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:22:23)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-30-Cognito/CglUserAuthenticationPool/CglUserAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserAuthenticationPoolCglUserAppClientE242F25C",
+            "trace": [
+              "new UserPoolClient (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool-client.ts:206:22)",
+              "UserPool.addClient (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:320:12)",
+              "new CognitoStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:43:33)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:22:23)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-30-Cognito/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId",
+            "trace": [
+              "new CognitoStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:57:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:22:23)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-30-Cognito/UserPoolClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClientId",
+            "trace": [
+              "new CognitoStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cognito-stack/cognito-stack.ts:62:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:22:23)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-30-Cognito/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-30-Cognito"
+    },
+    "InfraStack-40-DynamoDB": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-40-DynamoDB.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-40-DynamoDB/CglOtpTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "CglOtpTable6DC81150"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:702:38)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CglOtpTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglOtpTable6DC81150",
+            "trace": [
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:674:18)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:17:26)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CglUserTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "CglUserTable2F4B65FF"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:702:38)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:22:27)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CglUserTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserTable2F4B65FF",
+            "trace": [
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:674:18)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:22:27)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CglUserResetPassTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "CglUserResetPassTableC4AF27BE"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:702:38)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:28:31)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CglUserResetPassTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserResetPassTableC4AF27BE",
+            "trace": [
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:674:18)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:28:31)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CGLAttachCode": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "CGLAttachCode805755B4"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:702:38)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:33:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CGLAttachCode/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CGLAttachCode805755B4",
+            "trace": [
+              "new Table (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:674:18)",
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:33:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/OtpTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OtpTable",
+            "trace": [
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:43:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/UserTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserTable",
+            "trace": [
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:47:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/UserResetPassTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserResetPassTable",
+            "trace": [
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:51:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/AttachTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AttachTable",
+            "trace": [
+              "new DynamoDBStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/dynamo-db-stack/dynamo-db-stack.ts:55:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:23:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-40-DynamoDB/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-40-DynamoDB"
+    },
+    "InfraStack-50-S3CargolinkDocument": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-50-S3CargolinkDocument.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-50-S3CargolinkDocument/InfraStack-50-S3CargolinkDocument/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InfraStack50S3CargolinkDocument1BF5E03E",
+            "trace": [
+              "new Bucket (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:710:22)",
+              "new CargolinkDocumentStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/s3-cargolink-document-stack/cargolink-document-stack.ts:6:9)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:24:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-50-S3CargolinkDocument/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-50-S3CargolinkDocument"
+    },
+    "InfraStack-60-PinPoint": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-60-PinPoint.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-60-PinPoint/CglMessagingService": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglMessagingService",
+            "trace": [
+              "new PinpointStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/pinpoint-stack/pinpoint-stack.ts:8:29)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:25:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-60-PinPoint/CglSmsService": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglSmsService",
+            "trace": [
+              "new PinpointStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/pinpoint-stack/pinpoint-stack.ts:12:32)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:25:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-60-PinPoint/CglEmailService": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglEmailService",
+            "trace": [
+              "new PinpointStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/pinpoint-stack/pinpoint-stack.ts:16:34)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:25:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-60-PinPoint/CglPinpointProjectID": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglPinpointProjectID",
+            "trace": [
+              "new PinpointStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/pinpoint-stack/pinpoint-stack.ts:28:5)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:25:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-60-PinPoint/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-60-PinPoint"
+    },
+    "InfraStack-70-Kms": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-70-Kms.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-70-Kms/CglUserKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserKey8ADD2F2E",
+            "trace": [
+              "new Key (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-kms/lib/key.ts:401:22)",
+              "new KmsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/kms-stack/kms-stack.ts:8:17)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:26:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-70-Kms/CglUserKey/Alias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserKeyAliasD43D31F4",
+            "trace": [
+              "new Alias (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-kms/lib/alias.ts:143:22)",
+              "Key.addAlias (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-kms/lib/key.ts:72:19)",
+              "new Key (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-kms/lib/key.ts:418:12)",
+              "new KmsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/kms-stack/kms-stack.ts:8:17)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:26:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-70-Kms/CglUserKeyARN": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglUserKeyARN",
+            "trace": [
+              "new KmsStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/kms-stack/kms-stack.ts:13:5)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:26:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/InfraStack-70-Kms/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-70-Kms"
+    },
+    "InfraStack-90-CloudFront": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "InfraStack-90-CloudFront.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/InfraStack-90-CloudFront/CglCachePolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglCachePolicyBE54335B",
+            "trace": [
+              "new CachePolicy (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:86:22)",
+              "new CloudFrontStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cloudfront-stack/nested-stack.ts:16:26)",
+              "Socket.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:39:9)",
+              "Socket.emit (node:events:394:28)",
+              "Socket.emit (node:domain:470:12)",
+              "addChunk (node:internal/streams/readable:312:12)",
+              "readableAddChunk (node:internal/streams/readable:287:9)",
+              "Socket.Readable.push (node:internal/streams/readable:226:10)",
+              "Pipe.onStreamRead (node:internal/stream_base_commons:190:23)"
+            ]
+          }
+        ],
+        "/InfraStack-90-CloudFront/InfraStack-90-CloudFront/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InfraStack90CloudFrontDCBA18A5",
+            "trace": [
+              "new Bucket (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:710:22)",
+              "new CloudFrontStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cloudfront-stack/nested-stack.ts:30:34)",
+              "Socket.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:39:9)",
+              "Socket.emit (node:events:394:28)",
+              "Socket.emit (node:domain:470:12)",
+              "addChunk (node:internal/streams/readable:312:12)",
+              "readableAddChunk (node:internal/streams/readable:287:9)",
+              "Socket.Readable.push (node:internal/streams/readable:226:10)",
+              "Pipe.onStreamRead (node:internal/stream_base_commons:190:23)"
+            ]
+          }
+        ],
+        "/InfraStack-90-CloudFront/CglCloudFront/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CglCloudFrontBB6A502F",
+            "trace": [
+              "new Distribution (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:164:26)",
+              "new CloudFrontStack (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/lib/cloudfront-stack/nested-stack.ts:37:9)",
+              "Socket.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/bin/main-stack.ts:39:9)",
+              "Socket.emit (node:events:394:28)",
+              "Socket.emit (node:domain:470:12)",
+              "addChunk (node:internal/streams/readable:312:12)",
+              "readableAddChunk (node:internal/streams/readable:287:9)",
+              "Socket.Readable.push (node:internal/streams/readable:226:10)",
+              "Pipe.onStreamRead (node:internal/stream_base_commons:190:23)"
+            ]
+          }
+        ],
+        "/InfraStack-90-CloudFront/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/@aws-cdk/core/lib/app.ts:62:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/katanyoo/Infiltech/Projects/CargoLink/cgl-op-infra/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "InfraStack-90-CloudFront"
+    }
+  }
+}
