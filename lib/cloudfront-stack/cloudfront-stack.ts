@@ -2,8 +2,6 @@ import * as cdk from '@aws-cdk/core'
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
 import *  as origins from '@aws-cdk/aws-cloudfront-origins'
 import * as  s3 from '@aws-cdk/aws-s3'
-import { URL } from 'url';
-import * as acm from '@aws-cdk/aws-certificatemanager'
 
 interface CloudfrontStackProps extends cdk.StackProps {
     apigwUrl: string
@@ -12,12 +10,6 @@ export class CloudFrontStack extends cdk.Stack {
 
     constructor(scope: cdk.Construct, id: string, props: CloudfrontStackProps) {
         super(scope, id, props)
-
-        // const domain_name = process.env.CERTIFICATE_DOMAIN || 'stg.api.onelinky.co.th'
-        // const cert = new acm.Certificate(this, 'Certificate', {
-        //     domainName: domain_name,
-        //     validation: acm.CertificateValidation.fromDns(),
-        // });
 
         const policies = new cloudfront.CachePolicy(this, "CglCachePolicy", {
             cachePolicyName: 'allow-cors-to-authoization',
@@ -38,13 +30,15 @@ export class CloudFrontStack extends cdk.Stack {
             accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
         })
 
-        // const importedApiGwUrl = cdk.Fn.importValue('ApiGatewayStack:APIGwCglOpAPIUrl');
-
+        const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
         new cloudfront.Distribution(this, 'CglCloudFront', {
-            // domainNames: [domain_name],
-            // certificate: acm.Certificate.fromCertificateArn(this, 'cgl-certificate', cert.certificateArn),
+            // domainNames: ["dev.api.cargolink.co.th"],
+            // certificate: certificate.Certificate.fromCertificateArn(this,
+            //     'cgl-dev-certificate',
+            //     'arn:aws:acm:us-east-1:029707422715:certificate/4a3367b7-5635-4a3b-9538-a21208fb3d44'),
             comment: "cargolink-cloudfront",
             logBucket: cloudfrontBucket,
+            // logBucket: s3.Bucket.fromBucketArn(this, id, 'arn:aws:s3:::cgl-cloudfront-log-dev'),
             logFilePrefix: "cgl-cloudfront",
             enableLogging: true,
             enabled: true,
@@ -65,7 +59,6 @@ export class CloudFrontStack extends cdk.Stack {
 
                 cachedMethods: { methods: ['GET', 'HEAD'] },  // don't have effect with API normal request (exclude GET,HEAD)
                 allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,  // INCLUDE ALL Request method for API gateway
-                // allowedMethods: { methods: ['GET', 'HEAD'] }  // don't have effect with API normal request (exclude GET,HEAD)
             },
             priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL
         })

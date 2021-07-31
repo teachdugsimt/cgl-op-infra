@@ -10,9 +10,9 @@ import { DynamoDBStack } from '../lib/dynamo-db-stack/dynamo-db-stack';
 import { CargolinkDocumentStack } from '../lib/s3-cargolink-document-stack/cargolink-document-stack';
 import { PinpointStack } from "../lib/pinpoint-stack/pinpoint-stack";
 import { KmsStack } from "../lib/kms-stack/kms-stack";
-import { CloudFrontStack } from '../lib/cloudfront-stack/nested-stack'
 import { ApiGatewayStack } from '../lib/api-gateway-stack/api-gateway-stack';
 import { spawn } from 'child_process';
+import { CloudFrontStack } from '../lib/cloudfront-stack/cloudfront-stack'
 
 const app = new cdk.App();
 
