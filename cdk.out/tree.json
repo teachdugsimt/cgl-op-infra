@@ -12,21 +12,21 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-10-DB": {
-        "id": "InfraStack-10-DB",
-        "path": "InfraStack-10-DB",
+      "InfraStackDB": {
+        "id": "InfraStackDB",
+        "path": "InfraStackDB",
         "children": {
           "CglVpcResources": {
             "id": "CglVpcResources",
-            "path": "InfraStack-10-DB/CglVpcResources",
+            "path": "InfraStackDB/CglVpcResources",
             "children": {
-              "CGLDbVPC": {
-                "id": "CGLDbVPC",
-                "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC",
+              "CGLDevDbVPC": {
+                "id": "CGLDevDbVPC",
+                "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/Resource",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::VPC",
                       "aws:cdk:cloudformation:props": {
@@ -37,7 +37,7 @@
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC"
+                            "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC"
                           }
                         ]
                       }
@@ -49,17 +49,17 @@
                   },
                   "PublicSubnet1": {
                     "id": "PublicSubnet1",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1",
                     "children": {
                       "Subnet": {
                         "id": "Subnet",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/Subnet",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/Subnet",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                           "aws:cdk:cloudformation:props": {
                             "cidrBlock": "10.0.0.0/18",
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "availabilityZone": {
                               "Fn::Select": [
@@ -81,7 +81,7 @@
                               },
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1"
                               }
                             ]
                           }
@@ -93,7 +93,7 @@
                       },
                       "Acl": {
                         "id": "Acl",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/Acl",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
                           "version": "1.109.0"
@@ -101,17 +101,17 @@
                       },
                       "RouteTable": {
                         "id": "RouteTable",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/RouteTable",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/RouteTable",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                           "aws:cdk:cloudformation:props": {
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "tags": [
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1"
                               }
                             ]
                           }
@@ -123,15 +123,15 @@
                       },
                       "RouteTableAssociation": {
                         "id": "RouteTableAssociation",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/RouteTableAssociation",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/RouteTableAssociation",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPublicSubnet1RouteTableE8E10504"
+                              "Ref": "CGLDevDbVPCPublicSubnet1RouteTable6FCA2C93"
                             },
                             "subnetId": {
-                              "Ref": "CGLDbVPCPublicSubnet1Subnet65053CDB"
+                              "Ref": "CGLDevDbVPCPublicSubnet1Subnet36C085FB"
                             }
                           }
                         },
@@ -142,16 +142,16 @@
                       },
                       "DefaultRoute": {
                         "id": "DefaultRoute",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/DefaultRoute",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/DefaultRoute",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPublicSubnet1RouteTableE8E10504"
+                              "Ref": "CGLDevDbVPCPublicSubnet1RouteTable6FCA2C93"
                             },
                             "destinationCidrBlock": "0.0.0.0/0",
                             "gatewayId": {
-                              "Ref": "CGLDbVPCIGW6BB29B7E"
+                              "Ref": "CGLDevDbVPCIGW47416E1D"
                             }
                           }
                         },
@@ -162,7 +162,7 @@
                       },
                       "EIP": {
                         "id": "EIP",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/EIP",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/EIP",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::EIP",
                           "aws:cdk:cloudformation:props": {
@@ -170,7 +170,7 @@
                             "tags": [
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1"
                               }
                             ]
                           }
@@ -182,23 +182,23 @@
                       },
                       "NATGateway": {
                         "id": "NATGateway",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1/NATGateway",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1/NATGateway",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::NatGateway",
                           "aws:cdk:cloudformation:props": {
                             "subnetId": {
-                              "Ref": "CGLDbVPCPublicSubnet1Subnet65053CDB"
+                              "Ref": "CGLDevDbVPCPublicSubnet1Subnet36C085FB"
                             },
                             "allocationId": {
                               "Fn::GetAtt": [
-                                "CGLDbVPCPublicSubnet1EIPE14BC016",
+                                "CGLDevDbVPCPublicSubnet1EIP5F53B6B1",
                                 "AllocationId"
                               ]
                             },
                             "tags": [
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet1"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet1"
                               }
                             ]
                           }
@@ -216,17 +216,17 @@
                   },
                   "PublicSubnet2": {
                     "id": "PublicSubnet2",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2",
                     "children": {
                       "Subnet": {
                         "id": "Subnet",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/Subnet",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/Subnet",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                           "aws:cdk:cloudformation:props": {
                             "cidrBlock": "10.0.64.0/18",
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "availabilityZone": {
                               "Fn::Select": [
@@ -248,7 +248,7 @@
                               },
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2"
                               }
                             ]
                           }
@@ -260,7 +260,7 @@
                       },
                       "Acl": {
                         "id": "Acl",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/Acl",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
                           "version": "1.109.0"
@@ -268,17 +268,17 @@
                       },
                       "RouteTable": {
                         "id": "RouteTable",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/RouteTable",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/RouteTable",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                           "aws:cdk:cloudformation:props": {
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "tags": [
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2"
                               }
                             ]
                           }
@@ -290,15 +290,15 @@
                       },
                       "RouteTableAssociation": {
                         "id": "RouteTableAssociation",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/RouteTableAssociation",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/RouteTableAssociation",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPublicSubnet2RouteTable4EF6FCBC"
+                              "Ref": "CGLDevDbVPCPublicSubnet2RouteTable61DEF0AE"
                             },
                             "subnetId": {
-                              "Ref": "CGLDbVPCPublicSubnet2SubnetED2436BE"
+                              "Ref": "CGLDevDbVPCPublicSubnet2Subnet3F73FBE6"
                             }
                           }
                         },
@@ -309,16 +309,16 @@
                       },
                       "DefaultRoute": {
                         "id": "DefaultRoute",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PublicSubnet2/DefaultRoute",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PublicSubnet2/DefaultRoute",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPublicSubnet2RouteTable4EF6FCBC"
+                              "Ref": "CGLDevDbVPCPublicSubnet2RouteTable61DEF0AE"
                             },
                             "destinationCidrBlock": "0.0.0.0/0",
                             "gatewayId": {
-                              "Ref": "CGLDbVPCIGW6BB29B7E"
+                              "Ref": "CGLDevDbVPCIGW47416E1D"
                             }
                           }
                         },
@@ -335,17 +335,17 @@
                   },
                   "PrivateSubnet1": {
                     "id": "PrivateSubnet1",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1",
                     "children": {
                       "Subnet": {
                         "id": "Subnet",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/Subnet",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/Subnet",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                           "aws:cdk:cloudformation:props": {
                             "cidrBlock": "10.0.128.0/18",
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "availabilityZone": {
                               "Fn::Select": [
@@ -367,7 +367,7 @@
                               },
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1"
                               }
                             ]
                           }
@@ -379,7 +379,7 @@
                       },
                       "Acl": {
                         "id": "Acl",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/Acl",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
                           "version": "1.109.0"
@@ -387,17 +387,17 @@
                       },
                       "RouteTable": {
                         "id": "RouteTable",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/RouteTable",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/RouteTable",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                           "aws:cdk:cloudformation:props": {
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "tags": [
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1"
                               }
                             ]
                           }
@@ -409,15 +409,15 @@
                       },
                       "RouteTableAssociation": {
                         "id": "RouteTableAssociation",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/RouteTableAssociation",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/RouteTableAssociation",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPrivateSubnet1RouteTable1CC51282"
+                              "Ref": "CGLDevDbVPCPrivateSubnet1RouteTable4BEF98D8"
                             },
                             "subnetId": {
-                              "Ref": "CGLDbVPCPrivateSubnet1Subnet60C46DF6"
+                              "Ref": "CGLDevDbVPCPrivateSubnet1SubnetFECE3CD8"
                             }
                           }
                         },
@@ -428,16 +428,16 @@
                       },
                       "DefaultRoute": {
                         "id": "DefaultRoute",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet1/DefaultRoute",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet1/DefaultRoute",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPrivateSubnet1RouteTable1CC51282"
+                              "Ref": "CGLDevDbVPCPrivateSubnet1RouteTable4BEF98D8"
                             },
                             "destinationCidrBlock": "0.0.0.0/0",
                             "natGatewayId": {
-                              "Ref": "CGLDbVPCPublicSubnet1NATGateway8FF56B2A"
+                              "Ref": "CGLDevDbVPCPublicSubnet1NATGatewayC530F2E4"
                             }
                           }
                         },
@@ -454,17 +454,17 @@
                   },
                   "PrivateSubnet2": {
                     "id": "PrivateSubnet2",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2",
                     "children": {
                       "Subnet": {
                         "id": "Subnet",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/Subnet",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/Subnet",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Subnet",
                           "aws:cdk:cloudformation:props": {
                             "cidrBlock": "10.0.192.0/18",
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "availabilityZone": {
                               "Fn::Select": [
@@ -486,7 +486,7 @@
                               },
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2"
                               }
                             ]
                           }
@@ -498,7 +498,7 @@
                       },
                       "Acl": {
                         "id": "Acl",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/Acl",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/Acl",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
                           "version": "1.109.0"
@@ -506,17 +506,17 @@
                       },
                       "RouteTable": {
                         "id": "RouteTable",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/RouteTable",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/RouteTable",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::RouteTable",
                           "aws:cdk:cloudformation:props": {
                             "vpcId": {
-                              "Ref": "CGLDbVPC9EE96AAF"
+                              "Ref": "CGLDevDbVPC7E479944"
                             },
                             "tags": [
                               {
                                 "key": "Name",
-                                "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2"
+                                "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2"
                               }
                             ]
                           }
@@ -528,15 +528,15 @@
                       },
                       "RouteTableAssociation": {
                         "id": "RouteTableAssociation",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/RouteTableAssociation",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/RouteTableAssociation",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::SubnetRouteTableAssociation",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPrivateSubnet2RouteTable0CC8BE69"
+                              "Ref": "CGLDevDbVPCPrivateSubnet2RouteTable60CF480D"
                             },
                             "subnetId": {
-                              "Ref": "CGLDbVPCPrivateSubnet2Subnet23B70D9B"
+                              "Ref": "CGLDevDbVPCPrivateSubnet2SubnetE562F1AB"
                             }
                           }
                         },
@@ -547,16 +547,16 @@
                       },
                       "DefaultRoute": {
                         "id": "DefaultRoute",
-                        "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/PrivateSubnet2/DefaultRoute",
+                        "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/PrivateSubnet2/DefaultRoute",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::Route",
                           "aws:cdk:cloudformation:props": {
                             "routeTableId": {
-                              "Ref": "CGLDbVPCPrivateSubnet2RouteTable0CC8BE69"
+                              "Ref": "CGLDevDbVPCPrivateSubnet2RouteTable60CF480D"
                             },
                             "destinationCidrBlock": "0.0.0.0/0",
                             "natGatewayId": {
-                              "Ref": "CGLDbVPCPublicSubnet1NATGateway8FF56B2A"
+                              "Ref": "CGLDevDbVPCPublicSubnet1NATGatewayC530F2E4"
                             }
                           }
                         },
@@ -573,14 +573,14 @@
                   },
                   "IGW": {
                     "id": "IGW",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/IGW",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/IGW",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::InternetGateway",
                       "aws:cdk:cloudformation:props": {
                         "tags": [
                           {
                             "key": "Name",
-                            "value": "InfraStack-10-DB/CglVpcResources/CGLDbVPC"
+                            "value": "InfraStackDB/CglVpcResources/CGLDevDbVPC"
                           }
                         ]
                       }
@@ -592,15 +592,15 @@
                   },
                   "VPCGW": {
                     "id": "VPCGW",
-                    "path": "InfraStack-10-DB/CglVpcResources/CGLDbVPC/VPCGW",
+                    "path": "InfraStackDB/CglVpcResources/CGLDevDbVPC/VPCGW",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::EC2::VPCGatewayAttachment",
                       "aws:cdk:cloudformation:props": {
                         "vpcId": {
-                          "Ref": "CGLDbVPC9EE96AAF"
+                          "Ref": "CGLDevDbVPC7E479944"
                         },
                         "internetGatewayId": {
-                          "Ref": "CGLDbVPCIGW6BB29B7E"
+                          "Ref": "CGLDevDbVPCIGW47416E1D"
                         }
                       }
                     },
@@ -617,11 +617,11 @@
               },
               "CDKMetadata": {
                 "id": "CDKMetadata",
-                "path": "InfraStack-10-DB/CglVpcResources/CDKMetadata",
+                "path": "InfraStackDB/CglVpcResources/CDKMetadata",
                 "children": {
                   "Default": {
                     "id": "Default",
-                    "path": "InfraStack-10-DB/CglVpcResources/CDKMetadata/Default",
+                    "path": "InfraStackDB/CglVpcResources/CDKMetadata/Default",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnResource",
                       "version": "1.109.0"
@@ -633,25 +633,25 @@
                   "version": "1.109.0"
                 }
               },
-              "InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref": {
-                "id": "InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref",
-                "path": "InfraStack-10-DB/CglVpcResources/InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref",
+              "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": {
+                "id": "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
+                "path": "InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
                   "version": "1.109.0"
                 }
               },
-              "InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref": {
-                "id": "InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref",
-                "path": "InfraStack-10-DB/CglVpcResources/InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref",
+              "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": {
+                "id": "InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
+                "path": "InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
                   "version": "1.109.0"
                 }
               },
-              "InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef": {
-                "id": "InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef",
-                "path": "InfraStack-10-DB/CglVpcResources/InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef",
+              "InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": {
+                "id": "InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
+                "path": "InfraStackDB/CglVpcResources/InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
                   "version": "1.109.0"
@@ -665,11 +665,11 @@
           },
           "CglVpcResources.NestedStack": {
             "id": "CglVpcResources.NestedStack",
-            "path": "InfraStack-10-DB/CglVpcResources.NestedStack",
+            "path": "InfraStackDB/CglVpcResources.NestedStack",
             "children": {
               "CglVpcResources.NestedStackResource": {
                 "id": "CglVpcResources.NestedStackResource",
-                "path": "InfraStack-10-DB/CglVpcResources.NestedStack/CglVpcResources.NestedStackResource",
+                "path": "InfraStackDB/CglVpcResources.NestedStack/CglVpcResources.NestedStackResource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
                   "aws:cdk:cloudformation:props": {
@@ -683,7 +683,7 @@
                           },
                           "/",
                           {
-                            "Ref": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3Bucket792E6F29"
+                            "Ref": "AssetParameters13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5eS3Bucket8366F073"
                           },
                           "/",
                           {
@@ -693,7 +693,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3VersionKey47B01263"
+                                    "Ref": "AssetParameters13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5eS3VersionKey87DAED00"
                                   }
                                 ]
                               }
@@ -706,7 +706,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3VersionKey47B01263"
+                                    "Ref": "AssetParameters13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5eS3VersionKey87DAED00"
                                   }
                                 ]
                               }
@@ -730,29 +730,29 @@
           },
           "CglRdsResources": {
             "id": "CglRdsResources",
-            "path": "InfraStack-10-DB/CglRdsResources",
+            "path": "InfraStackDB/CglRdsResources",
             "children": {
-              "CGLDbInstance": {
-                "id": "CGLDbInstance",
-                "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance",
+              "CGLDevDbInstance": {
+                "id": "CGLDevDbInstance",
+                "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance",
                 "children": {
                   "SubnetGroup": {
                     "id": "SubnetGroup",
-                    "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/SubnetGroup",
+                    "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/SubnetGroup",
                     "children": {
                       "Default": {
                         "id": "Default",
-                        "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/SubnetGroup/Default",
+                        "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/SubnetGroup/Default",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::RDS::DBSubnetGroup",
                           "aws:cdk:cloudformation:props": {
-                            "dbSubnetGroupDescription": "Subnet group for CGLDbInstance database",
+                            "dbSubnetGroupDescription": "Subnet group for CGLDevDbInstance database",
                             "subnetIds": [
                               {
-                                "Ref": "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref"
+                                "Ref": "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref"
                               },
                               {
-                                "Ref": "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref"
+                                "Ref": "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref"
                               }
                             ]
                           }
@@ -770,15 +770,15 @@
                   },
                   "SecurityGroup": {
                     "id": "SecurityGroup",
-                    "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/SecurityGroup",
+                    "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/SecurityGroup",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/SecurityGroup/Resource",
+                        "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/SecurityGroup/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::EC2::SecurityGroup",
                           "aws:cdk:cloudformation:props": {
-                            "groupDescription": "Security group for CGLDbInstance database",
+                            "groupDescription": "Security group for CGLDevDbInstance database",
                             "securityGroupEgress": [
                               {
                                 "cidrIp": "0.0.0.0/0",
@@ -796,7 +796,7 @@
                               }
                             ],
                             "vpcId": {
-                              "Ref": "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef"
+                              "Ref": "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef"
                             }
                           }
                         },
@@ -813,11 +813,11 @@
                   },
                   "Secret": {
                     "id": "Secret",
-                    "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/Secret",
+                    "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/Secret",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/Secret/Resource",
+                        "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/Secret/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::SecretsManager::Secret",
                           "aws:cdk:cloudformation:props": {
@@ -838,7 +838,7 @@
                               "generateStringKey": "password",
                               "excludeCharacters": " %+~`#$&*()|[]{}:;<>?!'/@\"\\"
                             },
-                            "name": "CGLDbInstance"
+                            "name": "CGLDevDbInstance"
                           }
                         },
                         "constructInfo": {
@@ -848,19 +848,19 @@
                       },
                       "Attachment": {
                         "id": "Attachment",
-                        "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/Secret/Attachment",
+                        "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/Secret/Attachment",
                         "children": {
                           "Resource": {
                             "id": "Resource",
-                            "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/Secret/Attachment/Resource",
+                            "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/Secret/Attachment/Resource",
                             "attributes": {
                               "aws:cdk:cloudformation:type": "AWS::SecretsManager::SecretTargetAttachment",
                               "aws:cdk:cloudformation:props": {
                                 "secretId": {
-                                  "Ref": "InfraStack10DBCglRdsResourcesCGLDbInstanceSecret3ECE65303fdaad7efa858a3daf9490cf0a702aeb"
+                                  "Ref": "InfraStackDBCglRdsResourcesCGLDevDbInstanceSecret39CC97C43fdaad7efa858a3daf9490cf0a702aeb"
                                 },
                                 "targetId": {
-                                  "Ref": "CGLDbInstanceE149BCD9"
+                                  "Ref": "CGLDevDbInstance075828F1"
                                 },
                                 "targetType": "AWS::RDS::DBInstance"
                               }
@@ -884,16 +884,15 @@
                   },
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-10-DB/CglRdsResources/CGLDbInstance/Resource",
+                    "path": "InfraStackDB/CglRdsResources/CGLDevDbInstance/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::RDS::DBInstance",
                       "aws:cdk:cloudformation:props": {
                         "dbInstanceClass": "db.t2.micro",
                         "allocatedStorage": "100",
                         "copyTagsToSnapshot": true,
-                        "dbInstanceIdentifier": "cgl-db",
                         "dbSubnetGroupName": {
-                          "Ref": "CGLDbInstanceSubnetGroupC176E43B"
+                          "Ref": "CGLDevDbInstanceSubnetGroup6DFABB5C"
                         },
                         "engine": "postgres",
                         "engineVersion": "12.3",
@@ -904,7 +903,7 @@
                             [
                               "{{resolve:secretsmanager:",
                               {
-                                "Ref": "InfraStack10DBCglRdsResourcesCGLDbInstanceSecret3ECE65303fdaad7efa858a3daf9490cf0a702aeb"
+                                "Ref": "InfraStackDBCglRdsResourcesCGLDevDbInstanceSecret39CC97C43fdaad7efa858a3daf9490cf0a702aeb"
                               },
                               ":SecretString:password::}}"
                             ]
@@ -916,7 +915,7 @@
                         "vpcSecurityGroups": [
                           {
                             "Fn::GetAtt": [
-                              "CGLDbInstanceSecurityGroup8CD40099",
+                              "CGLDevDbInstanceSecurityGroupAF3DA919",
                               "GroupId"
                             ]
                           }
@@ -936,11 +935,11 @@
               },
               "CDKMetadata": {
                 "id": "CDKMetadata",
-                "path": "InfraStack-10-DB/CglRdsResources/CDKMetadata",
+                "path": "InfraStackDB/CglRdsResources/CDKMetadata",
                 "children": {
                   "Default": {
                     "id": "Default",
-                    "path": "InfraStack-10-DB/CglRdsResources/CDKMetadata/Default",
+                    "path": "InfraStackDB/CglRdsResources/CDKMetadata/Default",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnResource",
                       "version": "1.109.0"
@@ -952,25 +951,25 @@
                   "version": "1.109.0"
                 }
               },
-              "reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref": {
-                "id": "reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref",
-                "path": "InfraStack-10-DB/CglRdsResources/reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref",
+              "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": {
+                "id": "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
+                "path": "InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnParameter",
                   "version": "1.109.0"
                 }
               },
-              "reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref": {
-                "id": "reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref",
-                "path": "InfraStack-10-DB/CglRdsResources/reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref",
+              "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": {
+                "id": "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
+                "path": "InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnParameter",
                   "version": "1.109.0"
                 }
               },
-              "reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef": {
-                "id": "reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef",
-                "path": "InfraStack-10-DB/CglRdsResources/reference-to-InfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004.Outputs.InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef",
+              "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": {
+                "id": "reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
+                "path": "InfraStackDB/CglRdsResources/reference-to-InfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29.Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnParameter",
                   "version": "1.109.0"
@@ -984,11 +983,11 @@
           },
           "CglRdsResources.NestedStack": {
             "id": "CglRdsResources.NestedStack",
-            "path": "InfraStack-10-DB/CglRdsResources.NestedStack",
+            "path": "InfraStackDB/CglRdsResources.NestedStack",
             "children": {
               "CglRdsResources.NestedStackResource": {
                 "id": "CglRdsResources.NestedStackResource",
-                "path": "InfraStack-10-DB/CglRdsResources.NestedStack/CglRdsResources.NestedStackResource",
+                "path": "InfraStackDB/CglRdsResources.NestedStack/CglRdsResources.NestedStackResource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
                   "aws:cdk:cloudformation:props": {
@@ -1002,7 +1001,7 @@
                           },
                           "/",
                           {
-                            "Ref": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3Bucket536A2741"
+                            "Ref": "AssetParameters4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983S3Bucket8456F013"
                           },
                           "/",
                           {
@@ -1012,7 +1011,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3VersionKeyC28BADF8"
+                                    "Ref": "AssetParameters4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983S3VersionKey7310FA36"
                                   }
                                 ]
                               }
@@ -1025,7 +1024,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3VersionKeyC28BADF8"
+                                    "Ref": "AssetParameters4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983S3VersionKey7310FA36"
                                   }
                                 ]
                               }
@@ -1035,22 +1034,22 @@
                       ]
                     },
                     "parameters": {
-                      "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref": {
+                      "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref": {
                         "Fn::GetAtt": [
                           "CglVpcResourcesNestedStackCglVpcResourcesNestedStackResource47ACCFFC",
-                          "Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet1Subnet842C22A5Ref"
+                          "Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet1Subnet3A600017Ref"
                         ]
                       },
-                      "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref": {
+                      "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref": {
                         "Fn::GetAtt": [
                           "CglVpcResourcesNestedStackCglVpcResourcesNestedStackResource47ACCFFC",
-                          "Outputs.InfraStack10DBCglVpcResourcesCGLDbVPCPublicSubnet2Subnet75DF3353Ref"
+                          "Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPCPublicSubnet2Subnet964C5AE4Ref"
                         ]
                       },
-                      "referencetoInfraStack10DBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource0555F004OutputsInfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef": {
+                      "referencetoInfraStackDBCglVpcResourcesNestedStackCglVpcResourcesNestedStackResource860B6A29OutputsInfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef": {
                         "Fn::GetAtt": [
                           "CglVpcResourcesNestedStackCglVpcResourcesNestedStackResource47ACCFFC",
-                          "Outputs.InfraStack10DBCglVpcResourcesCGLDbVPC295C913BRef"
+                          "Outputs.InfraStackDBCglVpcResourcesCGLDevDbVPC744B007CRef"
                         ]
                       }
                     }
@@ -1069,11 +1068,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-10-DB/CDKMetadata",
+            "path": "InfraStackDB/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-10-DB/CDKMetadata/Default",
+                "path": "InfraStackDB/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1087,15 +1086,15 @@
           },
           "AssetParameters": {
             "id": "AssetParameters",
-            "path": "InfraStack-10-DB/AssetParameters",
+            "path": "InfraStackDB/AssetParameters",
             "children": {
-              "3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266": {
-                "id": "3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266",
-                "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266",
+              "13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e": {
+                "id": "13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e",
+                "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/S3Bucket",
+                    "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1103,7 +1102,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/S3VersionKey",
+                    "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1111,7 +1110,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/ArtifactHash",
+                    "path": "InfraStackDB/AssetParameters/13690a4e562720d6b9f4c61ff5a6ca650221f2f85426aecd1ff01e8031d06d5e/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1123,13 +1122,13 @@
                   "version": "1.109.0"
                 }
               },
-              "60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164": {
-                "id": "60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164",
-                "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164",
+              "4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983": {
+                "id": "4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983",
+                "path": "InfraStackDB/AssetParameters/4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/S3Bucket",
+                    "path": "InfraStackDB/AssetParameters/4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1137,7 +1136,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/S3VersionKey",
+                    "path": "InfraStackDB/AssetParameters/4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1145,7 +1144,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/ArtifactHash",
+                    "path": "InfraStackDB/AssetParameters/4490a5ba6e91ab4917fee5a6b03e16cf16a7cc79300d6130172b83b4b9788983/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1169,23 +1168,23 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-20-SecretsHashKey": {
-        "id": "InfraStack-20-SecretsHashKey",
-        "path": "InfraStack-20-SecretsHashKey",
+      "InfraStackSecretsHashKey": {
+        "id": "InfraStackSecretsHashKey",
+        "path": "InfraStackSecretsHashKey",
         "children": {
           "DynamoDBSecret": {
             "id": "DynamoDBSecret",
-            "path": "InfraStack-20-SecretsHashKey/DynamoDBSecret",
+            "path": "InfraStackSecretsHashKey/DynamoDBSecret",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-20-SecretsHashKey/DynamoDBSecret/Resource",
+                "path": "InfraStackSecretsHashKey/DynamoDBSecret/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::SecretsManager::Secret",
                   "aws:cdk:cloudformation:props": {
                     "description": "Hashing key",
                     "generateSecretString": {},
-                    "name": "CGLHashKey"
+                    "name": "CGLDevHashKey"
                   }
                 },
                 "constructInfo": {
@@ -1201,11 +1200,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-20-SecretsHashKey/CDKMetadata",
+            "path": "InfraStackSecretsHashKey/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-20-SecretsHashKey/CDKMetadata/Default",
+                "path": "InfraStackSecretsHashKey/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1223,21 +1222,21 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-30-Cognito": {
-        "id": "InfraStack-30-Cognito",
-        "path": "InfraStack-30-Cognito",
+      "InfraStackCognito": {
+        "id": "InfraStackCognito",
+        "path": "InfraStackCognito",
         "children": {
           "CglUserAuthenticationPool": {
             "id": "CglUserAuthenticationPool",
-            "path": "InfraStack-30-Cognito/CglUserAuthenticationPool",
+            "path": "InfraStackCognito/CglUserAuthenticationPool",
             "children": {
               "smsRole": {
                 "id": "smsRole",
-                "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/smsRole",
+                "path": "InfraStackCognito/CglUserAuthenticationPool/smsRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/smsRole/Resource",
+                    "path": "InfraStackCognito/CglUserAuthenticationPool/smsRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -1247,7 +1246,7 @@
                               "Action": "sts:AssumeRole",
                               "Condition": {
                                 "StringEquals": {
-                                  "sts:ExternalId": "InfraStack30CognitoCglUserAuthenticationPool852E345D"
+                                  "sts:ExternalId": "InfraStackCognitoCglUserAuthenticationPool06FD56CA"
                                 }
                               },
                               "Effect": "Allow",
@@ -1288,7 +1287,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/Resource",
+                "path": "InfraStackCognito/CglUserAuthenticationPool/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Cognito::UserPool",
                   "aws:cdk:cloudformation:props": {
@@ -1324,7 +1323,7 @@
                       }
                     ],
                     "smsConfiguration": {
-                      "externalId": "InfraStack30CognitoCglUserAuthenticationPool852E345D",
+                      "externalId": "InfraStackCognitoCglUserAuthenticationPool06FD56CA",
                       "snsCallerArn": {
                         "Fn::GetAtt": [
                           "CglUserAuthenticationPoolsmsRole07ECB3DA",
@@ -1356,11 +1355,11 @@
               },
               "CglUserAppClient": {
                 "id": "CglUserAppClient",
-                "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/CglUserAppClient",
+                "path": "InfraStackCognito/CglUserAuthenticationPool/CglUserAppClient",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-30-Cognito/CglUserAuthenticationPool/CglUserAppClient/Resource",
+                    "path": "InfraStackCognito/CglUserAuthenticationPool/CglUserAppClient/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolClient",
                       "aws:cdk:cloudformation:props": {
@@ -1433,7 +1432,7 @@
           },
           "UserPoolId": {
             "id": "UserPoolId",
-            "path": "InfraStack-30-Cognito/UserPoolId",
+            "path": "InfraStackCognito/UserPoolId",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1441,7 +1440,7 @@
           },
           "UserPoolClientId": {
             "id": "UserPoolClientId",
-            "path": "InfraStack-30-Cognito/UserPoolClientId",
+            "path": "InfraStackCognito/UserPoolClientId",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1449,11 +1448,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-30-Cognito/CDKMetadata",
+            "path": "InfraStackCognito/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-30-Cognito/CDKMetadata/Default",
+                "path": "InfraStackCognito/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1471,17 +1470,17 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-40-DynamoDB": {
-        "id": "InfraStack-40-DynamoDB",
-        "path": "InfraStack-40-DynamoDB",
+      "InfraStackDynamoDB": {
+        "id": "InfraStackDynamoDB",
+        "path": "InfraStackDynamoDB",
         "children": {
           "CglOtpTable": {
             "id": "CglOtpTable",
-            "path": "InfraStack-40-DynamoDB/CglOtpTable",
+            "path": "InfraStackDynamoDB/CglOtpTable",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-40-DynamoDB/CglOtpTable/Resource",
+                "path": "InfraStackDynamoDB/CglOtpTable/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -1511,7 +1510,7 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "InfraStack-40-DynamoDB/CglOtpTable/ScalingRole",
+                "path": "InfraStackDynamoDB/CglOtpTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
                   "version": "1.109.0"
@@ -1525,11 +1524,11 @@
           },
           "CglUserTable": {
             "id": "CglUserTable",
-            "path": "InfraStack-40-DynamoDB/CglUserTable",
+            "path": "InfraStackDynamoDB/CglUserTable",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-40-DynamoDB/CglUserTable/Resource",
+                "path": "InfraStackDynamoDB/CglUserTable/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -1559,7 +1558,7 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "InfraStack-40-DynamoDB/CglUserTable/ScalingRole",
+                "path": "InfraStackDynamoDB/CglUserTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
                   "version": "1.109.0"
@@ -1573,11 +1572,11 @@
           },
           "CglUserResetPassTable": {
             "id": "CglUserResetPassTable",
-            "path": "InfraStack-40-DynamoDB/CglUserResetPassTable",
+            "path": "InfraStackDynamoDB/CglUserResetPassTable",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-40-DynamoDB/CglUserResetPassTable/Resource",
+                "path": "InfraStackDynamoDB/CglUserResetPassTable/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -1607,7 +1606,7 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "InfraStack-40-DynamoDB/CglUserResetPassTable/ScalingRole",
+                "path": "InfraStackDynamoDB/CglUserResetPassTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
                   "version": "1.109.0"
@@ -1621,11 +1620,11 @@
           },
           "CGLAttachCode": {
             "id": "CGLAttachCode",
-            "path": "InfraStack-40-DynamoDB/CGLAttachCode",
+            "path": "InfraStackDynamoDB/CGLAttachCode",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-40-DynamoDB/CGLAttachCode/Resource",
+                "path": "InfraStackDynamoDB/CGLAttachCode/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -1663,7 +1662,7 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "InfraStack-40-DynamoDB/CGLAttachCode/ScalingRole",
+                "path": "InfraStackDynamoDB/CGLAttachCode/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
                   "version": "1.109.0"
@@ -1677,7 +1676,7 @@
           },
           "OtpTable": {
             "id": "OtpTable",
-            "path": "InfraStack-40-DynamoDB/OtpTable",
+            "path": "InfraStackDynamoDB/OtpTable",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1685,7 +1684,7 @@
           },
           "UserTable": {
             "id": "UserTable",
-            "path": "InfraStack-40-DynamoDB/UserTable",
+            "path": "InfraStackDynamoDB/UserTable",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1693,7 +1692,7 @@
           },
           "UserResetPassTable": {
             "id": "UserResetPassTable",
-            "path": "InfraStack-40-DynamoDB/UserResetPassTable",
+            "path": "InfraStackDynamoDB/UserResetPassTable",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1701,7 +1700,7 @@
           },
           "AttachTable": {
             "id": "AttachTable",
-            "path": "InfraStack-40-DynamoDB/AttachTable",
+            "path": "InfraStackDynamoDB/AttachTable",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1709,11 +1708,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-40-DynamoDB/CDKMetadata",
+            "path": "InfraStackDynamoDB/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-40-DynamoDB/CDKMetadata/Default",
+                "path": "InfraStackDynamoDB/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1731,22 +1730,21 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-50-S3CargolinkDocument": {
-        "id": "InfraStack-50-S3CargolinkDocument",
-        "path": "InfraStack-50-S3CargolinkDocument",
+      "InfraStackS3CargolinkDocument": {
+        "id": "InfraStackS3CargolinkDocument",
+        "path": "InfraStackS3CargolinkDocument",
         "children": {
-          "InfraStack-50-S3CargolinkDocument": {
-            "id": "InfraStack-50-S3CargolinkDocument",
-            "path": "InfraStack-50-S3CargolinkDocument/InfraStack-50-S3CargolinkDocument",
+          "InfraStackS3CargolinkDocument": {
+            "id": "InfraStackS3CargolinkDocument",
+            "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-50-S3CargolinkDocument/InfraStack-50-S3CargolinkDocument/Resource",
+                "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
-                    "accessControl": "BucketOwnerFullControl",
-                    "bucketName": "cargolink-documents-staging"
+                    "accessControl": "BucketOwnerFullControl"
                   }
                 },
                 "constructInfo": {
@@ -1756,7 +1754,7 @@
               },
               "Notifications": {
                 "id": "Notifications",
-                "path": "InfraStack-50-S3CargolinkDocument/InfraStack-50-S3CargolinkDocument/Notifications",
+                "path": "InfraStackS3CargolinkDocument/InfraStackS3CargolinkDocument/Notifications",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.109.0"
@@ -1770,11 +1768,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-50-S3CargolinkDocument/CDKMetadata",
+            "path": "InfraStackS3CargolinkDocument/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-50-S3CargolinkDocument/CDKMetadata/Default",
+                "path": "InfraStackS3CargolinkDocument/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1792,13 +1790,13 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-60-PinPoint": {
-        "id": "InfraStack-60-PinPoint",
-        "path": "InfraStack-60-PinPoint",
+      "InfraStackPinPoint": {
+        "id": "InfraStackPinPoint",
+        "path": "InfraStackPinPoint",
         "children": {
           "CglMessagingService": {
             "id": "CglMessagingService",
-            "path": "InfraStack-60-PinPoint/CglMessagingService",
+            "path": "InfraStackPinPoint/CglMessagingService",
             "attributes": {
               "aws:cdk:cloudformation:type": "AWS::Pinpoint::App",
               "aws:cdk:cloudformation:props": {
@@ -1812,7 +1810,7 @@
           },
           "CglSmsService": {
             "id": "CglSmsService",
-            "path": "InfraStack-60-PinPoint/CglSmsService",
+            "path": "InfraStackPinPoint/CglSmsService",
             "attributes": {
               "aws:cdk:cloudformation:type": "AWS::Pinpoint::SMSChannel",
               "aws:cdk:cloudformation:props": {
@@ -1826,27 +1824,9 @@
               "version": "1.109.0"
             }
           },
-          "CglEmailService": {
-            "id": "CglEmailService",
-            "path": "InfraStack-60-PinPoint/CglEmailService",
-            "attributes": {
-              "aws:cdk:cloudformation:type": "AWS::Pinpoint::EmailChannel",
-              "aws:cdk:cloudformation:props": {
-                "applicationId": {
-                  "Ref": "CglMessagingService"
-                },
-                "fromAddress": "info@infiltech.org",
-                "identity": "arn:aws:ses:ap-southeast-1:329729442144:identity/infiltech.org"
-              }
-            },
-            "constructInfo": {
-              "fqn": "@aws-cdk/aws-pinpoint.CfnEmailChannel",
-              "version": "1.109.0"
-            }
-          },
           "CglPinpointProjectID": {
             "id": "CglPinpointProjectID",
-            "path": "InfraStack-60-PinPoint/CglPinpointProjectID",
+            "path": "InfraStackPinPoint/CglPinpointProjectID",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1854,11 +1834,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-60-PinPoint/CDKMetadata",
+            "path": "InfraStackPinPoint/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-60-PinPoint/CDKMetadata/Default",
+                "path": "InfraStackPinPoint/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1876,17 +1856,17 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-70-Kms": {
-        "id": "InfraStack-70-Kms",
-        "path": "InfraStack-70-Kms",
+      "InfraStackKms": {
+        "id": "InfraStackKms",
+        "path": "InfraStackKms",
         "children": {
           "CglUserKey": {
             "id": "CglUserKey",
-            "path": "InfraStack-70-Kms/CglUserKey",
+            "path": "InfraStackKms/CglUserKey",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-70-Kms/CglUserKey/Resource",
+                "path": "InfraStackKms/CglUserKey/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::KMS::Key",
                   "aws:cdk:cloudformation:props": {
@@ -1928,11 +1908,11 @@
               },
               "Alias": {
                 "id": "Alias",
-                "path": "InfraStack-70-Kms/CglUserKey/Alias",
+                "path": "InfraStackKms/CglUserKey/Alias",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "InfraStack-70-Kms/CglUserKey/Alias/Resource",
+                    "path": "InfraStackKms/CglUserKey/Alias/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::KMS::Alias",
                       "aws:cdk:cloudformation:props": {
@@ -1964,7 +1944,7 @@
           },
           "CglUserKeyARN": {
             "id": "CglUserKeyARN",
-            "path": "InfraStack-70-Kms/CglUserKeyARN",
+            "path": "InfraStackKms/CglUserKeyARN",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.109.0"
@@ -1972,11 +1952,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-70-Kms/CDKMetadata",
+            "path": "InfraStackKms/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-70-Kms/CDKMetadata/Default",
+                "path": "InfraStackKms/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
@@ -1994,17 +1974,17 @@
           "version": "1.109.0"
         }
       },
-      "InfraStack-90-CloudFront": {
-        "id": "InfraStack-90-CloudFront",
-        "path": "InfraStack-90-CloudFront",
+      "InfraCloudFrontTest": {
+        "id": "InfraCloudFrontTest",
+        "path": "InfraCloudFrontTest",
         "children": {
           "CglCachePolicy": {
             "id": "CglCachePolicy",
-            "path": "InfraStack-90-CloudFront/CglCachePolicy",
+            "path": "InfraCloudFrontTest/CglCachePolicy",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-90-CloudFront/CglCachePolicy/Resource",
+                "path": "InfraCloudFrontTest/CglCachePolicy/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFront::CachePolicy",
                   "aws:cdk:cloudformation:props": {
@@ -2050,18 +2030,18 @@
               "version": "1.109.0"
             }
           },
-          "InfraStack-90-CloudFront": {
-            "id": "InfraStack-90-CloudFront",
-            "path": "InfraStack-90-CloudFront/InfraStack-90-CloudFront",
+          "InfraCloudFrontTest": {
+            "id": "InfraCloudFrontTest",
+            "path": "InfraCloudFrontTest/InfraCloudFrontTest",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-90-CloudFront/InfraStack-90-CloudFront/Resource",
+                "path": "InfraCloudFrontTest/InfraCloudFrontTest/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
                     "accessControl": "BucketOwnerFullControl",
-                    "bucketName": "cgl-cloudfront-log-staging"
+                    "bucketName": "cgl-cloudfront-log-dev"
                   }
                 },
                 "constructInfo": {
@@ -2071,7 +2051,7 @@
               },
               "Notifications": {
                 "id": "Notifications",
-                "path": "InfraStack-90-CloudFront/InfraStack-90-CloudFront/Notifications",
+                "path": "InfraCloudFrontTest/InfraCloudFrontTest/Notifications",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.109.0"
@@ -2085,11 +2065,11 @@
           },
           "CglCloudFront": {
             "id": "CglCloudFront",
-            "path": "InfraStack-90-CloudFront/CglCloudFront",
+            "path": "InfraCloudFrontTest/CglCloudFront",
             "children": {
               "Origin1": {
                 "id": "Origin1",
-                "path": "InfraStack-90-CloudFront/CglCloudFront/Origin1",
+                "path": "InfraCloudFrontTest/CglCloudFront/Origin1",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.109.0"
@@ -2097,7 +2077,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "InfraStack-90-CloudFront/CglCloudFront/Resource",
+                "path": "InfraCloudFrontTest/CglCloudFront/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFront::Distribution",
                   "aws:cdk:cloudformation:props": {
@@ -2105,8 +2085,8 @@
                       "enabled": true,
                       "origins": [
                         {
-                          "domainName": "5rfalqfx84.execute-api.ap-southeast-1.amazonaws.com",
-                          "id": "InfraStack90CloudFrontCglCloudFrontOrigin1231FB87E",
+                          "domainName": "2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com",
+                          "id": "InfraCloudFrontTestCglCloudFrontOrigin1A8ECB528",
                           "originPath": "/prod",
                           "connectionTimeout": 10,
                           "customOriginConfig": {
@@ -2120,7 +2100,7 @@
                       ],
                       "defaultCacheBehavior": {
                         "pathPattern": "*",
-                        "targetOriginId": "InfraStack90CloudFrontCglCloudFrontOrigin1231FB87E",
+                        "targetOriginId": "InfraCloudFrontTestCglCloudFrontOrigin1A8ECB528",
                         "allowedMethods": [
                           "GET",
                           "HEAD",
@@ -2146,7 +2126,7 @@
                       "logging": {
                         "bucket": {
                           "Fn::GetAtt": [
-                            "InfraStack90CloudFrontDCBA18A5",
+                            "InfraCloudFrontTest6CCB241E",
                             "RegionalDomainName"
                           ]
                         },
@@ -2169,11 +2149,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "InfraStack-90-CloudFront/CDKMetadata",
+            "path": "InfraCloudFrontTest/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "InfraStack-90-CloudFront/CDKMetadata/Default",
+                "path": "InfraCloudFrontTest/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"

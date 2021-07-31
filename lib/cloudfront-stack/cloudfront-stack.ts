@@ -36,6 +36,7 @@ export class CloudFrontStack extends cdk.Stack {
 
         // const importedApiGwUrl = cdk.Fn.importValue('ApiGatewayStack:APIGwCglOpAPIUrl');
 
+        const originDomain = '2kgrbiwfnc.execute-api.ap-southeast-1.amazonaws.com'
         new cloudfront.Distribution(this, 'CglCloudFront', {
             // domainNames: ["dev.api.cargolink.co.th"],
             // certificate: certificate.Certificate.fromCertificateArn(this,
