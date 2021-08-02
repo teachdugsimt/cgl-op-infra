@@ -38,6 +38,11 @@ export class DynamoDBStack extends cdk.Stack {
             // encryptionKey:  {password: },
         });
 
+        const userUploadLink = new dynamodb.Table(this, 'CGLUserUploadLink', {
+            tableName: "cgl_user_upload_link",
+            partitionKey: { name: 'user_id', type: dynamodb.AttributeType.NUMBER }
+        });
+
         // Export values
         new cdk.CfnOutput(this, "OtpTable", {
             value: otpTable.tableName,
@@ -53,6 +58,10 @@ export class DynamoDBStack extends cdk.Stack {
 
         new cdk.CfnOutput(this, "AttachTable", {
             value: attachTable.tableName,
+        });
+
+        new cdk.CfnOutput(this, "UserUploadLinkTable", {
+            value: userUploadLink.tableName,
         });
 
     }
