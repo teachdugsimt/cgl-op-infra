@@ -26,7 +26,7 @@ export class CloudFrontStack extends cdk.Stack {
             queryStringBehavior: cloudfront.CacheQueryStringBehavior.all(),
             headerBehavior: cloudfront.CacheHeaderBehavior.allowList('Authorization', 'Origin',
                 'Access-Control-Request-Method',
-                'Access-Control-Request-Headers', 'Acceapt-Language', 'Content-Type', 'Accept')
+                'Access-Control-Request-Headers', 'Accept-Language', 'Content-Type', 'Accept')
         })
 
         const cloudfrontBucket = new s3.Bucket(this, id, {

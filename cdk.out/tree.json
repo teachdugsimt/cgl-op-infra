@@ -683,7 +683,7 @@
                           },
                           "/",
                           {
-                            "Ref": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3Bucket792E6F29"
+                            "Ref": "AssetParameters5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62S3Bucket3F3D9A3E"
                           },
                           "/",
                           {
@@ -693,7 +693,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3VersionKey47B01263"
+                                    "Ref": "AssetParameters5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62S3VersionKeyB13BEC6E"
                                   }
                                 ]
                               }
@@ -706,7 +706,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266S3VersionKey47B01263"
+                                    "Ref": "AssetParameters5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62S3VersionKeyB13BEC6E"
                                   }
                                 ]
                               }
@@ -1002,7 +1002,7 @@
                           },
                           "/",
                           {
-                            "Ref": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3Bucket536A2741"
+                            "Ref": "AssetParameters7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552abS3Bucket330098E3"
                           },
                           "/",
                           {
@@ -1012,7 +1012,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3VersionKeyC28BADF8"
+                                    "Ref": "AssetParameters7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552abS3VersionKey06081184"
                                   }
                                 ]
                               }
@@ -1025,7 +1025,7 @@
                                 "Fn::Split": [
                                   "||",
                                   {
-                                    "Ref": "AssetParameters60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164S3VersionKeyC28BADF8"
+                                    "Ref": "AssetParameters7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552abS3VersionKey06081184"
                                   }
                                 ]
                               }
@@ -1089,13 +1089,13 @@
             "id": "AssetParameters",
             "path": "InfraStack-10-DB/AssetParameters",
             "children": {
-              "3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266": {
-                "id": "3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266",
-                "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266",
+              "5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62": {
+                "id": "5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62",
+                "path": "InfraStack-10-DB/AssetParameters/5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/S3Bucket",
+                    "path": "InfraStack-10-DB/AssetParameters/5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1103,7 +1103,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/S3VersionKey",
+                    "path": "InfraStack-10-DB/AssetParameters/5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1111,7 +1111,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "InfraStack-10-DB/AssetParameters/3616466c239ff2a2f6f29ad466a4a17fb2c6e59ce89d5bd8a55981c768729266/ArtifactHash",
+                    "path": "InfraStack-10-DB/AssetParameters/5dd099a5d7df542d0846c1d64e0a9b8690b4c9671c59b58439d992fdfad89c62/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1123,13 +1123,13 @@
                   "version": "1.109.0"
                 }
               },
-              "60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164": {
-                "id": "60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164",
-                "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164",
+              "7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552ab": {
+                "id": "7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552ab",
+                "path": "InfraStack-10-DB/AssetParameters/7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552ab",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/S3Bucket",
+                    "path": "InfraStack-10-DB/AssetParameters/7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552ab/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1137,7 +1137,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/S3VersionKey",
+                    "path": "InfraStack-10-DB/AssetParameters/7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552ab/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -1145,7 +1145,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "InfraStack-10-DB/AssetParameters/60966e6dca9ee3a49ee061defa71fb85be2dc028cba4b019f3c8f76258329164/ArtifactHash",
+                    "path": "InfraStack-10-DB/AssetParameters/7723f8ad8e9e02b8aca8936a75f9558dcac738f4733ce043eac8c2f8ae8552ab/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.109.0"
@@ -2025,6 +2025,203 @@
               "Default": {
                 "id": "Default",
                 "path": "InfraStack-70-Kms/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.109.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.109.0"
+        }
+      },
+      "InfraStack-90-CloudFront": {
+        "id": "InfraStack-90-CloudFront",
+        "path": "InfraStack-90-CloudFront",
+        "children": {
+          "CglCachePolicy": {
+            "id": "CglCachePolicy",
+            "path": "InfraStack-90-CloudFront/CglCachePolicy",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraStack-90-CloudFront/CglCachePolicy/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFront::CachePolicy",
+                  "aws:cdk:cloudformation:props": {
+                    "cachePolicyConfig": {
+                      "name": "allow-cors-to-authoization",
+                      "comment": "whitelist-headers",
+                      "minTtl": 1,
+                      "maxTtl": 1,
+                      "defaultTtl": 1,
+                      "parametersInCacheKeyAndForwardedToOrigin": {
+                        "cookiesConfig": {
+                          "cookieBehavior": "none"
+                        },
+                        "headersConfig": {
+                          "headerBehavior": "whitelist",
+                          "headers": [
+                            "Authorization",
+                            "Origin",
+                            "Access-Control-Request-Method",
+                            "Access-Control-Request-Headers",
+                            "Accept-Language",
+                            "Content-Type",
+                            "Accept"
+                          ]
+                        },
+                        "enableAcceptEncodingGzip": true,
+                        "enableAcceptEncodingBrotli": true,
+                        "queryStringsConfig": {
+                          "queryStringBehavior": "all"
+                        }
+                      }
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cloudfront.CfnCachePolicy",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-cloudfront.CachePolicy",
+              "version": "1.109.0"
+            }
+          },
+          "InfraStack-90-CloudFront": {
+            "id": "InfraStack-90-CloudFront",
+            "path": "InfraStack-90-CloudFront/InfraStack-90-CloudFront",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraStack-90-CloudFront/InfraStack-90-CloudFront/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "accessControl": "BucketOwnerFullControl",
+                    "bucketName": "cgl-cloudfront-log-production"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                  "version": "1.109.0"
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "InfraStack-90-CloudFront/InfraStack-90-CloudFront/Notifications",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-s3.Bucket",
+              "version": "1.109.0"
+            }
+          },
+          "CglCloudFront": {
+            "id": "CglCloudFront",
+            "path": "InfraStack-90-CloudFront/CglCloudFront",
+            "children": {
+              "Origin1": {
+                "id": "Origin1",
+                "path": "InfraStack-90-CloudFront/CglCloudFront/Origin1",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.109.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "InfraStack-90-CloudFront/CglCloudFront/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFront::Distribution",
+                  "aws:cdk:cloudformation:props": {
+                    "distributionConfig": {
+                      "enabled": true,
+                      "origins": [
+                        {
+                          "domainName": "7lj33jhm95.execute-api.ap-southeast-1.amazonaws.com",
+                          "id": "InfraStack90CloudFrontCglCloudFrontOrigin1231FB87E",
+                          "originPath": "/prod",
+                          "connectionTimeout": 10,
+                          "customOriginConfig": {
+                            "originSslProtocols": [
+                              "TLSv1.2"
+                            ],
+                            "originProtocolPolicy": "https-only",
+                            "originReadTimeout": 40
+                          }
+                        }
+                      ],
+                      "defaultCacheBehavior": {
+                        "pathPattern": "*",
+                        "targetOriginId": "InfraStack90CloudFrontCglCloudFrontOrigin1231FB87E",
+                        "allowedMethods": [
+                          "GET",
+                          "HEAD",
+                          "OPTIONS",
+                          "PUT",
+                          "PATCH",
+                          "POST",
+                          "DELETE"
+                        ],
+                        "cachedMethods": [
+                          "GET",
+                          "HEAD"
+                        ],
+                        "cachePolicyId": {
+                          "Ref": "CglCachePolicyBE54335B"
+                        },
+                        "compress": true,
+                        "viewerProtocolPolicy": "redirect-to-https"
+                      },
+                      "comment": "cargolink-cloudfront",
+                      "httpVersion": "http2",
+                      "ipv6Enabled": true,
+                      "logging": {
+                        "bucket": {
+                          "Fn::GetAtt": [
+                            "InfraStack90CloudFrontDCBA18A5",
+                            "RegionalDomainName"
+                          ]
+                        },
+                        "prefix": "cgl-cloudfront"
+                      },
+                      "priceClass": "PriceClass_All"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cloudfront.CfnDistribution",
+                  "version": "1.109.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-cloudfront.Distribution",
+              "version": "1.109.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "InfraStack-90-CloudFront/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "InfraStack-90-CloudFront/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.109.0"
