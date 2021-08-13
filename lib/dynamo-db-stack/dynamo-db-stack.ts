@@ -43,6 +43,11 @@ export class DynamoDBStack extends cdk.Stack {
             partitionKey: { name: 'user_id', type: dynamodb.AttributeType.NUMBER }
         });
 
+        const truckUploadLink = new dynamodb.Table(this, 'CGLTruckUploadLink', {
+            tableName: "cgl_truck_upload_link",
+            partitionKey: { name: 'truck_id', type: dynamodb.AttributeType.NUMBER }
+        });
+
         // Export values
         new cdk.CfnOutput(this, "OtpTable", {
             value: otpTable.tableName,
@@ -62,6 +67,10 @@ export class DynamoDBStack extends cdk.Stack {
 
         new cdk.CfnOutput(this, "UserUploadLinkTable", {
             value: userUploadLink.tableName,
+        });
+
+        new cdk.CfnOutput(this, "TruckUploadLinkTable", {
+            value: truckUploadLink.tableName,
         });
 
     }
