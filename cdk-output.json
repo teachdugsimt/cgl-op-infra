@@ -1,18 +1,19 @@
 {
   "InfraStack-30-Cognito": {
-    "UserPoolClientId": "6iqnv0huopbhdp26ln27dies0u",
-    "UserPoolId": "ap-southeast-1_PKVsxFQ3l"
+    "UserPoolClientId": "3m6nd31i9h5or3hd48fdmi7org",
+    "UserPoolId": "ap-southeast-1_C00eQNAzx"
   },
   "InfraStack-40-DynamoDB": {
+    "UserUploadLinkTable": "cgl_user_upload_link",
     "AttachTable": "cgl_attach_code",
     "OtpTable": "cgl_otp",
     "UserTable": "cgl_user",
     "UserResetPassTable": "cgl_user_reset_pass"
   },
   "InfraStack-60-PinPoint": {
-    "CglPinpointProjectID": "2b67b4eaea4c4d35a3f2aa50c9f4c2f3"
+    "CglPinpointProjectID": "6e802552da744ca7953ac01b1a09102f"
   },
   "InfraStack-70-Kms": {
-    "CglUserKeyARN": "arn:aws:kms:ap-southeast-1:329729442144:key/c1dc815b-7fe2-41bb-8802-46ea432be11b"
+    "CglUserKeyARN": "arn:aws:kms:ap-southeast-1:796225514394:key/76116f0d-b75f-4068-86c8-2a7663b99e8a"
   }
 }
